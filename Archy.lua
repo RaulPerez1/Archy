@@ -25,7 +25,7 @@ Archy.version = _G.GetAddOnMetadata(FOLDER_NAME, "Version")
 _G["Archy"] = Archy
 
 local Dialog = LibStub("LibDialog-1.0")
-local HereBeDragons = LibStub("HereBeDragons-1.0")
+local HereBeDragons = LibStub("HereBeDragons-2.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("Archy", false)
 local LDBI = LibStub("LibDBIcon-1.0")
 
@@ -47,6 +47,7 @@ local ZONE_DATA = {}
 private.ZONE_DATA = ZONE_DATA
 
 local MAP_CONTINENTS = {} -- Popupated in Archy:OnEnable()
+private.MAP_CONTINENTS = MAP_CONTINENTS
 
 local EasySurveyButton -- Populated in Archy:OnInitialize()
 
@@ -116,14 +117,12 @@ local nearestDigsite
 
 local playerLocation = {
 	mapID = 0,
-	level = 0,
 	x = 0,
 	y = 0
 }
 
 local surveyLocation = {
 	mapID = 0,
-	level = 0,
 	x = 0,
 	y = 0
 }
@@ -495,53 +494,50 @@ local function CompareAndResetDigCounters(digsiteListA, digsiteListB)
 end
 
 function UpdateAllSites()
-	-- Set this for restoration at the end of the loop, since it's changed every iteration.
-	local originalMapID = _G.GetCurrentMapAreaID()
-
-	for continentID, continentName in pairs(MAP_CONTINENTS) do
+	
+	local unknownSites = 0
+	for continentID, continentData in pairs(MAP_CONTINENTS) do
 		local sites = {}
+		for continentZoneIndex = 1, #continentData.zones do
+			local zone = ZONE_DATA[continentData.zones[continentZoneIndex]]
+			for key, digsiteData in pairs(C_ResearchInfo.GetDigSitesForMap(zone.mapID)) do
 
-		_G.SetMapZoom(continentID)
-
-		for landmarkIndex = 1, _G.GetNumMapLandmarks() do
-			local landmarkType, landmarkName, _, textureIndex, mapPositionX, mapPositionY = C_WorldMap.GetMapLandmarkInfo(landmarkIndex)
-
-			if landmarkType == _G.LE_MAP_LANDMARK_TYPE_DIGSITE and mapPositionX and mapPositionY then
-				local siteKey = ("%d:%.6f:%.6f"):format(continentID, mapPositionX, mapPositionY)
-				local mapID, floorID = HereBeDragons:GetMapIDFromCZ(continentID, 0)
+				-- GetDigSitesForMap returns digsites from adjacent maps since they're visible
+				-- to it so normalize the key by using the world position
+				local _, worldPosition = C_Map.GetWorldPosFromMapPos(zone.mapID, digsiteData.position)
+				local siteKey = ("%d:%0.0f:%0.0f"):format(continentID, worldPosition.x, worldPosition.y)
 
 				local digsiteTemplate = private.DIGSITE_TEMPLATES[siteKey]
 				if digsiteTemplate then
-					local digsite = private.Digsites[digsiteTemplate.blobID]
-					if not digsite then
-						local digsiteMapID = digsiteTemplate.mapID
-						local x, y = HereBeDragons:TranslateZoneCoordinates(mapPositionX, mapPositionY, mapID, floorID, digsiteMapID, 0)
-
-						if x and y then
-							digsite = private.AddDigsite(digsiteTemplate, landmarkName, x, y)
+					if digsiteTemplate.mapID == zone.mapID then
+						local digsite = private.Digsites[siteKey]			
+						if not digsite then
+							digsite = private.AddDigsite(digsiteTemplate, digsiteData.name, digsiteData.position.x, digsiteData.position.y)
 						end
+						table.insert(sites, digsite)
 					end
-
-					table.insert(sites, digsite)
 				else
-					local blobID = _G.ArcheologyGetVisibleBlobID(landmarkIndex)
-					local message = ([[Missing dig site data: ["%s"] = { blobID = %d, mapID = 0, typeID = RaceID.Unknown } -- %s]]):format(siteKey, blobID, landmarkName)
-
-					Debug(message)
+					if unknownSites == 0 then
+						Debug("Missing dig site data:")
+					end
+					unknownSites = unknownSites + 1
+					Debug("\n\t\t[\""..siteKey.."\"] = {\n\t\t\tid = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\ttypeID = RaceID.Unknown,\n\t\t},")
 				end
-			end
+			end		
 		end
-
+		
 		if #sites > 0 then
 			if continent_digsites[continentID] then
 				CompareAndResetDigCounters(continent_digsites[continentID], sites)
 				CompareAndResetDigCounters(sites, continent_digsites[continentID])
 			end
-			continent_digsites[continentID] = sites
 		end
+		continent_digsites[continentID] = sites
 	end
-
-	_G.SetMapByID(originalMapID)
+	
+	if unknownSites > 0 then
+		print(unknownSites .. " missing digsites found. Please run /archy debug and report the list")
+	end
 end
 
 local function SortSitesByDistance(digsiteA, digsiteB)
@@ -576,7 +572,7 @@ function Archy:UpdateSiteDistances()
 		if digsite.mapIconFrame:IsShown() then
 			digsite.distance = digsite.mapIconFrame:GetDistance()
 		else
-			digsite.distance = HereBeDragons:GetZoneDistance(playerLocation.mapID, playerLocation.level, playerLocation.x, playerLocation.y, digsite.mapID, digsite.level, digsite.coordX, digsite.coordY)
+			digsite.distance = HereBeDragons:GetZoneDistance(playerLocation.mapID, playerLocation.x, playerLocation.y, digsite.mapID, digsite.coordX, digsite.coordY)
 		end
 
 		if digsite.coordX and digsite.distance and not digsite:IsBlacklisted() and (not closestDistance or digsite.distance < closestDistance) then
@@ -677,7 +673,8 @@ function Archy:OnInitialize()
 		local previousClickTime
 
 		_G.WorldFrame:HookScript("OnMouseDown", function(frame, button, down)
-			if button == "RightButton" and profileSettings.general.easyCast and _G.ArchaeologyMapUpdateAll() > 0 and not IsTaintable() and not _G.IsEquippedItemType(FISHING_POLE_ITEM_TYPE_NAME) and _G.CanScanResearchSite() and _G.GetSpellCooldown(SURVEY_SPELL_ID) == 0 then
+			uiMapID = C_Map.GetBestMapForUnit("player")
+			if button == "RightButton" and profileSettings.general.easyCast and _G.ArchaeologyMapUpdateAll(uiMapID) > 0 and not IsTaintable() and not _G.IsEquippedItemType(FISHING_POLE_ITEM_TYPE_NAME) and _G.CanScanResearchSite() and _G.GetSpellCooldown(SURVEY_SPELL_ID) == 0 then
 				-- Ensure the LootFrame contains no items; we don't care if it's simply visible.
 				if _G.GetNumLootItems() == 0 and previousClickTime then
 					local doubleClickTime = _G.GetTime() - previousClickTime
@@ -705,9 +702,9 @@ function Archy:OnInitialize()
 	-- ----------------------------------------------------------------------------
 	-- DB cleanups.
 	-- ----------------------------------------------------------------------------
-	for blobID, value in pairs(self.db.char.digsites.blacklist) do
+	for ID, value in pairs(self.db.char.digsites.blacklist) do
 		if value == false then
-			self.db.char.digsites.blacklist[blobID] = nil
+			self.db.char.digsites.blacklist[id] = nil
 		end
 	end
 
@@ -787,48 +784,29 @@ function Archy:OnEnable()
 	-- ----------------------------------------------------------------------------
 	-- Map stuff.
 	-- ----------------------------------------------------------------------------
-	local continentData = { _G.GetMapContinents() }
-	for continentDataIndex = 1, #continentData do
-		-- Odd indices are IDs, even are names.
-		if continentDataIndex % 2 == 0 then
-			local continentID = continentDataIndex / 2
-			local continentName = continentData[continentDataIndex]
-
-			_G.SetMapZoom(continentID)
-
-			local mapID = _G.GetCurrentMapAreaID()
-
-			MAP_CONTINENTS[continentID] = continentName
-
-			ZONE_DATA[mapID] = {
+	local continents = C_Map.GetMapChildrenInfo(946, Enum.UIMapType.Continent, true)
+	for continentIndex = 1, #continents do
+		continentID = continents[continentIndex].mapID
+		continentName = continents[continentIndex].name
+		
+		local continentZones = {}
+		local zoneData = C_Map.GetMapChildrenInfo(continentID, Enum.UIMapType.Zone)
+		for zoneDataIndex = 1, #zoneData do
+			local zoneID = zoneData[zoneDataIndex].mapID
+			continentZones[zoneDataIndex] = zoneID
+			ZONE_DATA[zoneID] = {
 				continentID = continentID,
-				ID = 0,
-				level = 0,
-				mapID = mapID,
-				name = continentName
+				ID = zoneID,
+				mapID = zoneID,
+				name = zoneData[zoneDataIndex].name
 			}
-
-			local zoneData = { _G.GetMapZones(continentID) }
-			for zoneDataIndex = 1, #zoneData do
-				-- Odd indices are IDs, even are names.
-				if zoneDataIndex % 2 == 0 then
-					_G.SetMapByID(mapID)
-
-					local zoneID = _G.GetCurrentMapZone()
-					local zoneName = zoneData[zoneDataIndex]
-
-					ZONE_DATA[mapID] = {
-						continentID = continentID,
-						ID = zoneID,
-						level = _G.GetCurrentMapDungeonLevel(),
-						mapID = mapID,
-						name = zoneName
-					}
-				else
-					mapID = zoneData[zoneDataIndex]
-				end
-			end
 		end
+				
+		MAP_CONTINENTS[continentID] = 
+		{
+			name = continentName,
+			zones = continentZones,
+		}
 	end
 
 	private.PlayerGUID = _G.UnitGUID("player")
@@ -913,7 +891,7 @@ local SUBCOMMAND_FUNCS = {
 	scan = function()
 		local sites = {}
 		local found = 0
-		local currentMapID = _G.GetCurrentMapAreaID()
+		local currentMapID = C_Map.GetBestMapForUnit("player")
 
 		Debug("Scanning digsites:\n")
 
@@ -927,7 +905,7 @@ local SUBCOMMAND_FUNCS = {
 					local siteKey = ("%d:%.6f:%.6f"):format(continentID, mapPositionX, mapPositionY)
 
 					if not private.DIGSITE_TEMPLATES[siteKey] and not sites[siteKey] then
-						Debug(("[\"%s\"] = { blobID = %d, mapID = 0, typeID = RaceID.Unknown } -- \"%s\""):format(siteKey, _G.ArcheologyGetVisibleBlobID(landmarkIndex), landmarkName))
+						Debug(("[\"%s\"] = { id = %d, mapID = 0, typeID = RaceID.Unknown } -- \"%s\""):format(siteKey, _G.ArcheologyGetVisibleBlobID(landmarkIndex), landmarkName))
 						sites[siteKey] = true
 						found = found + 1
 					end
@@ -1108,37 +1086,48 @@ function Archy:UpdateSkillBar()
 end
 
 --[[ Positional functions ]] --
+
+function Archy:GetContinentMapId(mapID)
+	local mapInfo = C_Map.GetMapInfo(mapID)
+	local parentMapID = mapID
+	while parentMapID and mapInfo and mapInfo.mapType ~= Enum.UIMapType.Continent do
+		parentMapID = mapInfo.parentMapID
+		mapInfo = C_Map.GetMapInfo(mapInfo.parentMapID);
+	end
+	return parentMapID
+end
+
 function Archy:UpdatePlayerPosition(force)
 	if not private.hasArchaeology or _G.IsInInstance() or _G.UnitIsGhost("player") or (not force and not private.ProfileSettings.general.show) then
 		return
 	end
 
-	local mapX, mapY, mapID, mapLevel = HereBeDragons:GetPlayerZonePosition()
-	local continentID = HereBeDragons:GetCZFromMapID(mapID)
+	local mapX, mapY, mapID, mapType = HereBeDragons:GetPlayerZonePosition()
 
-	if not mapID or not mapLevel or (mapX == 0 and mapY == 0) then
+	if not mapID or (mapX == 0 and mapY == 0) then
 		return
 	end
 
+	local continentID = Archy:GetContinentMapId(mapID)
 	if not playerLocation.mapID then
-		playerLocation.x, playerLocation.y, playerLocation.mapID, playerLocation.level = mapX, mapY, mapID, mapLevel
+		playerLocation.x, playerLocation.y, playerLocation.mapID = mapX, mapY, mapID
 		private.CurrentContinentID = continentID
 		UpdateAllSites()
 	end
 
-	if _G.GetCurrentMapAreaID() == -1 then
+	if C_Map.GetBestMapForUnit("player") == -1 then
 		self:UpdateSiteDistances()
 		DigSiteFrame:UpdateChrome()
 		self:RefreshDigSiteDisplay()
 		return
 	end
 
-	if force or playerLocation.x ~= mapX or playerLocation.y ~= mapY or playerLocation.mapID ~= mapID or playerLocation.level ~= mapLevel then
-		playerLocation.x, playerLocation.y, playerLocation.mapID, playerLocation.level = mapX, mapY, mapID, mapLevel
+	if force or playerLocation.x ~= mapX or playerLocation.y ~= mapY or playerLocation.mapID ~= mapID then
+		playerLocation.x, playerLocation.y, playerLocation.mapID = mapX, mapY, mapID
 
 		self:UpdateSiteDistances()
 
-		DistanceIndicatorFrame:Update(mapID, mapLevel, mapX, mapY, surveyLocation.mapID, surveyLocation.level, surveyLocation.x, surveyLocation.y)
+		DistanceIndicatorFrame:Update(mapID, mapX, mapY, surveyLocation.mapID, surveyLocation.x, surveyLocation.y)
 		UpdateMinimapIcons()
 		self:RefreshDigSiteDisplay()
 	end
@@ -1245,12 +1234,10 @@ do
 
 		if not nearestDigsite then
 			surveyLocation.mapID = 0
-			surveyLocation.level = 0
 			surveyLocation.x = 0
 			surveyLocation.y = 0
 			return
 		end
-		surveyLocation.level = playerLocation.level
 		surveyLocation.mapID = playerLocation.mapID
 		surveyLocation.x = playerLocation.x
 		surveyLocation.y = playerLocation.y
@@ -1313,6 +1300,7 @@ function Archy:RESEARCH_ARTIFACT_DIG_SITE_UPDATED()
 		return
 	end
 
+	print("Archy:RESEARCH_ARTIFACT_DIG_SITE_UPDATED")
 	UpdateAllSites()
 
 	self:UpdateSiteDistances()
@@ -1429,11 +1417,10 @@ function Archy:CURRENCY_DISPLAY_UPDATE()
 				currentDigsite.stats.looted = currentDigsite.stats.looted + 1
 				currentDigsite.stats.fragments = currentDigsite.stats.fragments + diff
 
-				currentDigsite:AddSurveyNode(playerLocation.mapID, playerLocation.level, playerLocation.x, playerLocation.y)
+				currentDigsite:AddSurveyNode(playerLocation.mapID, playerLocation.x, playerLocation.y)
 			end
 
 			surveyLocation.mapID = 0
-			surveyLocation.level = 0
 			surveyLocation.x = 0
 			surveyLocation.y = 0
 

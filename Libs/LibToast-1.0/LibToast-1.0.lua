@@ -692,7 +692,7 @@ function LibToast:DefineSink(displayName, texturePath)
     LibToast.sink_titles[self] = displayName
 
     if not LibToast.registered_sink then
-        local LibSink = LibStub("LibSink-2.0")
+        local LibSink = LibStub("LibSink-2.0", true)
         if not LibSink then
             return
         end

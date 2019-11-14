@@ -19,7 +19,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("Archy", false)
 local Archy = LibStub("AceAddon-3.0"):GetAddon("Archy")
 local LSM = LibStub("LibSharedMedia-3.0")
 
-local HereBeDragons = LibStub("HereBeDragons-1.0")
+local HereBeDragons = LibStub("HereBeDragons-2.0")
 
 -- ----------------------------------------------------------------------------
 -- Constants.
@@ -951,7 +951,8 @@ function Archy:RefreshDigSiteDisplay()
 		return
 	end
 
-	local maxFindCount = (continentID >= _G.WORLDMAP_DRAENOR_ID) and NUM_DIGSITE_FINDS_DRAENOR or NUM_DIGSITE_FINDS_DEFAULT
+	local WORLDMAP_DRAENOR_ID = 572
+	local maxFindCount = (continentID >= WORLDMAP_DRAENOR_ID) and NUM_DIGSITE_FINDS_DRAENOR or NUM_DIGSITE_FINDS_DEFAULT
 
 	for index = 1, #DigSiteFrame.children do
 		DigSiteFrame.children[index]:Hide()
@@ -980,7 +981,7 @@ function Archy:RefreshDigSiteDisplay()
 			childFrame.siteButton.digsite = digsite
 			childFrame.siteButton.zoneID = digsite.zoneID
 			childFrame.zone.name:SetText(digsite.zoneName)
-			childFrame:SetID(digsite.blobID)
+			childFrame:SetID(digsite.id)
 
 			local race = digsite.race
 			childFrame.crest.icon:SetTexture(race.texture)

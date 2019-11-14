@@ -48,24 +48,26 @@ local KeystoneIDToRace = {} -- Populated in InitializeRaces
 private.KeystoneIDToRace = KeystoneIDToRace
 
 local RaceTextureIDToRaceLabel = {
-	[461829] = "ArchRaceDraenei",
 	[461831] = "ArchRaceDwarf",
+	[461829] = "ArchRaceDraenei",
 	[461833] = "ArchRaceFossil",
-	[461835] = "ArchRaceNerubian",
 	[461837] = "ArchRaceNightElf",
+	[461835] = "ArchRaceNerubian",
+	[462321] = "ArchRaceOrc",
 	[461839] = "ArchRaceTolvir",
 	[461841] = "ArchRaceTroll",
 	[461843] = "ArchRaceVrykul",
-	[462321] = "ArchRaceOrc",
-	[633000] = "ArchRaceMogu",
 	[633002] = "ArchRacePandaren",
 	[839111] = "ArchRaceMantid",
+	[633000] = "ArchRaceMogu",
 	[1030616] = "ArchRaceArakkoa",
 	[1030617] = "ArchRaceDraenorOrc",
 	[1030618] = "ArchRaceOgre",
-	[1445573] = "ArchRaceDemons",
 	[1445575] = "ArchRaceHighborneNightElves",
 	[1445577] = "ArchRaceHighmountainTauren",
+	[1445573] = "ArchRaceDemons",
+	[2060051] = "ArchRaceZandalari",
+	[2060049] = "ArchRaceDrust",
 }
 
 -- ----------------------------------------------------------------------------
@@ -102,6 +104,7 @@ function private.InitializeRaces()
 	CurrencyNameFromRaceID[RaceID.ArchRaceDemons] = _G.GetCurrencyInfo(1174)
 	CurrencyNameFromRaceID[RaceID.ArchRaceDraenei] = _G.GetCurrencyInfo(398)
 	CurrencyNameFromRaceID[RaceID.ArchRaceDraenorOrc] = _G.GetCurrencyInfo(821)
+	CurrencyNameFromRaceID[RaceID.ArchRaceDrust] = _G.GetCurrencyInfo(1535)
 	CurrencyNameFromRaceID[RaceID.ArchRaceDwarf] = _G.GetCurrencyInfo(384)
 	CurrencyNameFromRaceID[RaceID.ArchRaceFossil] = _G.GetCurrencyInfo(393)
 	CurrencyNameFromRaceID[RaceID.ArchRaceHighborneNightElves] = _G.GetCurrencyInfo(1172)
@@ -116,7 +119,8 @@ function private.InitializeRaces()
 	CurrencyNameFromRaceID[RaceID.ArchRaceTolvir] = _G.GetCurrencyInfo(401)
 	CurrencyNameFromRaceID[RaceID.ArchRaceTroll] = _G.GetCurrencyInfo(385)
 	CurrencyNameFromRaceID[RaceID.ArchRaceVrykul] = _G.GetCurrencyInfo(399)
-
+	CurrencyNameFromRaceID[RaceID.ArchRaceZandalari] = _G.GetCurrencyInfo(1534)
+	
 	for raceID, currencyName in pairs(CurrencyNameFromRaceID) do
 		Races[raceID].currencyName = currencyName
 	end
