@@ -776,8 +776,6 @@ function Archy:OnEnable()
 	TomTomHandler.isActive = true
 	TomTomHandler.hasTomTom = (_G.TomTom and _G.TomTom.AddWaypoint and _G.TomTom.RemoveWaypoint) and true or false
 	TomTomHandler.hasPOIIntegration = TomTomHandler.hasTomTom and (_G.TomTom.profile and _G.TomTom.profile.poi and _G.TomTom.EnableDisablePOIIntegration) and true or false
-	print(_G.TomTom.AddWaypoint)
-	print(_G.TomTom.RemoveWaypoint)
 
 	private.InitializeRaces()
 	private.InitializeDigsiteTemplates()
