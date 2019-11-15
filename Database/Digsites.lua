@@ -2379,6 +2379,36 @@ function private.InitializeDigsiteTemplates()
 		-- Kul Tiras
 		-- ----------------------------------------------------------------------------
 
+		["876:1109:403"] = {
+			id = 2401, -- Digsite: Brokenbough Roost
+			mapID = 895, -- Drustvar
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Rockslip Woodlands
+			mapID = 895, -- Tiragarde Sound
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Valley View
+			mapID = 895, -- Tiragarde Sound
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Vigil Hill
+			mapID = 895, -- Tiragarde Sound
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876::0:0"] = {
+			id = 0, -- Digsite: Stagheart Cliffs
+			mapID = 895, -- Tiragarde Sound
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:-234:434"] = {
+			id = 0, -- Digsite: Placid Springs
+			mapID = 895, -- Tiragarde Sound
+			typeID = RaceID.ArchRaceDrust,
+		},		
 		["876:-7:3839"] = {
 			id = 2423, -- Digsite: Corlain
 			mapID = 896, --Drustvar
@@ -2389,13 +2419,38 @@ function private.InitializeDigsiteTemplates()
 			mapID = 896, --Drustvar
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:2281:-227"] = {
-			id = 2437, -- Digsite: Roaming Hills
-			mapID = 942, --Stormsong Valley
+		["876:0:0"] = {
+			id = 0, -- Digsite: Arom's Crossing
+			mapID = 896, --Drustvar
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Brackish Coast
+			mapID = 896, --Drustvar
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Hunter's Run
+			mapID = 896, --Drustvar
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Iceveil Glacier
+			mapID = 896, --Drustvar
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Whitegrove Chapel
+			mapID = 896, --Drustvar
 			typeID = RaceID.ArchRaceDrust,
 		},
 		["876:2539:548"] = {
 			id = 2435, -- Digsite: Goldfield Farmstead
+			mapID = 942, --Stormsong Valley
+			typeID = RaceID.ArchRaceDrust,
+		},		
+		["876:2281:-227"] = {
+			id = 2437, -- Digsite: Roaming Hills
 			mapID = 942, --Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
@@ -2404,11 +2459,65 @@ function private.InitializeDigsiteTemplates()
 			mapID = 942, --Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
-		
+		["876:0:0"] = {
+			id = 0, -- Digsite: Briny Flats
+			mapID = 942, --Stormsong Valley
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Drowned Lands
+			mapID = 942, --Stormsong Valley
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Millstone Hills
+			mapID = 942, --Stormsong Valley
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:0:0"] = {
+			id = 0, -- Digsite: Windwhisper Summit
+			mapID = 942, --Stormsong Valley
+			typeID = RaceID.ArchRaceDrust,
+		},
 		-- ----------------------------------------------------------------------------
 		-- Zandalar
 		-- ----------------------------------------------------------------------------
-		
+
+		["875:-749:-1172"] = {
+			id = 2453, -- Digsite: Atal'Gral
+			mapID = 862, -- Zuldazar
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Dreadpearl Shallows
+			mapID = 862, -- Zuldazar
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Old Merchant Road
+			mapID = 862, -- Zuldazar
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: The Rivermarsh
+			mapID = 862, -- Zuldazar
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Savagelands
+			mapID = 862, -- Zuldazar
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Tusk Isle
+			mapID = 862, -- Zuldazar
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Zeb'ahari
+			mapID = 862, -- Zuldazar
+			typeID = RaceID.ArchRaceZandalari,
+		},
 		["875:1109:2069"] = {
 			id = 2463, -- Digsite: Plains of Tojek
 			mapID = 863, --Nazmir
@@ -2424,6 +2533,21 @@ function private.InitializeDigsiteTemplates()
 			mapID = 863, --Nazmir
 			typeID = RaceID.ArchRaceZandalari,
 		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Razorjaw River
+			mapID = 863, --Nazmir
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Terrace of Sorrows
+			mapID = 863, --Nazmir
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Upper Frogmarsh
+			mapID = 863, --Nazmir
+			typeID = RaceID.ArchRaceZandalari,
+		},
 		["875:999:658"] = {
 			id = 2475, -- Digsite: Xal'vor
 			mapID = 863, --Nazmir
@@ -2432,6 +2556,31 @@ function private.InitializeDigsiteTemplates()
 		["875:750:3550"] = {
 			id = 2479, -- Digsite: Arid Basin
 			mapID = 864, --Vol'dun
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: The Cracked Coast
+			mapID = 864, -- Vol'dun
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: The Eternal Spring
+			mapID = 864, -- Vol'dun
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Verdant Plateau
+			mapID = 864, -- Vol'dun
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: Whistlebloom Oasis
+			mapID = 864, -- Vol'dun
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:3730:2567"] = {
+			id = 2491, -- Digsite: Terrace of the Fang
+			mapID = 864, -- Vol'dun
 			typeID = RaceID.ArchRaceZandalari,
 		},
 	}
