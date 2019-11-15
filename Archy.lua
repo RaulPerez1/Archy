@@ -1300,7 +1300,6 @@ function Archy:RESEARCH_ARTIFACT_DIG_SITE_UPDATED()
 		return
 	end
 
-	print("Archy:RESEARCH_ARTIFACT_DIG_SITE_UPDATED")
 	UpdateAllSites()
 
 	self:UpdateSiteDistances()
@@ -1387,11 +1386,11 @@ end -- do-block
 
 do
 	local STANDING_ON_IT_SPELL_ID = 210837
-	local STANDING_ON_IT_DESCRIPTION = _G.GetSpellDescription(STANDING_ON_IT_SPELL_ID)
 
-	function Archy:COMBAT_LOG_EVENT_UNFILTERED(eventName, _, subEvent, _, sourceGUID, _, _, _, _, _, _, _, spellID)
+	function Archy:COMBAT_LOG_EVENT_UNFILTERED(event)
+		local _, subEvent, _, sourceGUID, _, _, _, _, _, _, _, spellID, spellDescription, _ = CombatLogGetCurrentEventInfo()
 		if subEvent == "SPELL_CAST_SUCCESS" and sourceGUID == private.PlayerGUID and spellID == STANDING_ON_IT_SPELL_ID then
-			self:Pour(STANDING_ON_IT_DESCRIPTION)
+			self:Pour(spellDescription)
 		end
 	end
 end
