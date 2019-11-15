@@ -258,8 +258,8 @@ function Race:UpdateCurrentProject()
 	end
 
 	_G.SetSelectedArtifact(self.ID)
+	local artifactName, artifactDescription, rarity, icon, spellDescription, numSockets, _, _ = _G.GetSelectedArtifactInfo()
 
-	local artifactName, artifactDescription, rarity, icon, spellDescription, numSockets = _G.GetSelectedArtifactInfo()
 	local artifact = self.Artifacts[artifactName:lower()]
 	if not artifact then
 		private.Debug("Missing data for %s artifact \"%s\"", self.name, artifactName)
