@@ -43,7 +43,7 @@ local TomTomHandler = {
 		end
 
 		self.currentDigsite = digsite
-		self.waypoint = _G.TomTom:AddMFWaypoint(digsite.mapID, nil, digsite.coordX, digsite.coordY, {
+		self.waypoint = _G.TomTom:AddWaypoint(digsite.mapID, digsite.coordX, digsite.coordY, {
 			crazy = private.ProfileSettings.tomtom.crazyArrowEnabled,
 			title = ("%s %s\n%s"):format(digsite.name, _G.PARENS_TEMPLATE:format(digsite.race.name), digsite.zoneName),
 		})
