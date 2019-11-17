@@ -887,37 +887,54 @@ local SUBCOMMAND_FUNCS = {
 
 		debugger:Display()
 	end,
-	-- @alpha@
 	scan = function()
+		local debugger = GetDebugger()
 		local sites = {}
 		local found = 0
 		local currentMapID = C_Map.GetBestMapForUnit("player")
 
 		Debug("Scanning digsites:\n")
+		for continentID, continentData in pairs(MAP_CONTINENTS) do
+			for continentZoneIndex = 1, #continentData.zones do
+				local zone = ZONE_DATA[continentData.zones[continentZoneIndex]]
+				for key, digsiteData in pairs(C_ResearchInfo.GetDigSitesForMap(zone.mapID)) do
 
-		for continentID, continentName in pairs(MAP_CONTINENTS) do
-			_G.SetMapZoom(continentID)
-
-			for landmarkIndex = 1, _G.GetNumMapLandmarks() do
-				local landmarkType, landmarkName, _, textureIndex, mapPositionX, mapPositionY, mapLinkID, showInBattleMap = C_WorldMap.GetMapLandmarkInfo(landmarkIndex)
-
-				if landmarkType == _G.LE_MAP_LANDMARK_TYPE_DIGSITE then
-					local siteKey = ("%d:%.6f:%.6f"):format(continentID, mapPositionX, mapPositionY)
+					-- GetDigSitesForMap returns digsites from adjacent maps since they're visible
+					-- to it so normalize the key by using the world position
+					local _, worldPosition = C_Map.GetWorldPosFromMapPos(zone.mapID, digsiteData.position)
+					local siteKey = ("%d:%0.0f:%0.0f"):format(continentID, worldPosition.x, worldPosition.y)
 
 					if not private.DIGSITE_TEMPLATES[siteKey] and not sites[siteKey] then
-						Debug(("[\"%s\"] = { id = %d, mapID = 0, typeID = RaceID.Unknown } -- \"%s\""):format(siteKey, _G.ArcheologyGetVisibleBlobID(landmarkIndex), landmarkName))
+						Debug("\n\t\t[\""..siteKey.."\"] = {\n\t\t\tid = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\ttypeID = RaceID.Unknown,\n\t\t},")
 						sites[siteKey] = true
 						found = found + 1
 					end
 				end
 			end
 		end
-		Debug(("%d found"):format(found))
-
-		_G.SetMapByID(currentMapID)
+		Debug(("%d found"):format(found))		
 		debugger:Display()
 	end,
-	-- @end-alpha@
+	dumpsiteinfo = function()
+		local debugger = GetDebugger()
+		local currentMapID = C_Map.GetBestMapForUnit("player")
+
+		Debug("Scanning digsites:\n")
+		for continentID, continentData in pairs(MAP_CONTINENTS) do
+			for continentZoneIndex = 1, #continentData.zones do
+				local zone = ZONE_DATA[continentData.zones[continentZoneIndex]]
+				for key, digsiteData in pairs(C_ResearchInfo.GetDigSitesForMap(zone.mapID)) do
+
+					-- GetDigSitesForMap returns digsites from adjacent maps since they're visible
+					-- to it so normalize the key by using the world position
+					local _, worldPosition = C_Map.GetWorldPosFromMapPos(zone.mapID, digsiteData.position)
+					local siteKey = ("%d:%0.0f:%0.0f"):format(continentID, worldPosition.x, worldPosition.y)
+					Debug("\n\t\t[\""..siteKey.."\"] = {\n\t\t\tid = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\ttypeID = RaceID.Unknown,\n\t\t},")
+				end
+			end
+		end
+		debugger:Display()
+	end,
 }
 
 _G["SLASH_ARCHY1"] = "/archy"
