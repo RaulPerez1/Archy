@@ -168,7 +168,6 @@ function private.AddRace(raceID)
 	end
 
 	for artifactIndex = 1, race.numArtifacts do
-	artifactRarity
 		local artifactName, _, artifactRarity, artifactIcon, _, _, _, _, _, completionCount = _G.GetArtifactInfoByRace(raceID, artifactIndex)
 		local artifact = {
 			ID = artifactIndex,
