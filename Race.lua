@@ -168,7 +168,8 @@ function private.AddRace(raceID)
 	end
 
 	for artifactIndex = 1, race.numArtifacts do
-		local artifactName, artifactDescription, artifactRarity, artifactIcon, hoverDescription, keystoneCount, bgTexture, firstCompletionTime, completionCount = _G.GetArtifactInfoByRace(raceID, artifactIndex)
+	artifactRarity
+		local artifactName, _, artifactRarity, artifactIcon, _, _, _, _, _, completionCount = _G.GetArtifactInfoByRace(raceID, artifactIndex)
 		local artifact = {
 			ID = artifactIndex,
 			completionCount = completionCount or 0,
@@ -219,7 +220,7 @@ function Race:GetArtifactCompletionCountByName(targetArtifactName)
 	end
 
 	for artifactIndex = 1, self.numArtifacts do
-		local artifactName, _, _, _, _, _, _, _, completionCount = _G.GetArtifactInfoByRace(self.ID, artifactIndex)
+		local artifactName, _, _, _, _, _, _, _, _, completionCount = _G.GetArtifactInfoByRace(self.ID, artifactIndex)
 		if artifactName == targetArtifactName then
 			return completionCount or 0
 		end
