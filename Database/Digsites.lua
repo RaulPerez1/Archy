@@ -258,10 +258,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 181,
 			typeID = RaceID.ArchRaceNightElf,
 		},
-		["12:0:0"] = {
-			-- Ruins of Eldarath
-			id = 55412,
-			mapID = 181,
+		["12:3479:-5157"] = {
+			id = 185, -- Ruins of Eldarath
+			mapID = 76, -- Azshara
 			typeID = RaceID.ArchRaceNightElf,
 		},
 		["12:0:0"] = {
@@ -288,10 +287,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 43,
 			typeID = RaceID.ArchRaceNightElf,
 		},
-		["12:0:0"] = {
-			-- Ruins of Stardust
-			id = 55400,
-			mapID = 43,
+		["12:2089:-245"] = {
+			id = 173, -- Ruins of Stardust
+			mapID = 63, -- Ashenvale
 			typeID = RaceID.ArchRaceNightElf,
 		},
 		["12:0:0"] = {
@@ -419,10 +417,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 141,
 			typeID = RaceID.ArchRaceFossil,
 		},
-		["12:0:0"] = {
-			-- Zoram Strand Digsite
-			id = 55356,
-			mapID = 43,
+		["12:3969:900"] = {
+			id = 169, -- Zoram Strand Digsite
+			mapID = 63, -- Ashenvale
 			typeID = RaceID.ArchRaceNightElf,
 		},
 		["12:-6854:-2920"] = {
@@ -571,10 +568,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 26,
 			typeID = RaceID.ArchRaceTroll,
 		},
-		["13:0:0"] = {
-			-- Lakeridge Highway Fossil Bank
-			id = 55416,
-			mapID = 36,
+		["13:-9670:-2485"] = {
+			id = 189, -- Lakeridge Highway Fossil Bank
+			mapID = 49, -- Redridge Mountains
 			typeID = RaceID.ArchRaceFossil,
 		},
 		["13:0:0"] = {
@@ -725,10 +721,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 37,
 			typeID = RaceID.ArchRaceTroll,
 		},
-		["13:0:0"] = {
-			-- Whelgar's Excavation Site
-			id = 54126,
-			mapID = 40,
+		["13:-3487:-1811"] = {
+			id = 12, -- Whelgar's Excavation Site
+			mapID = 56, -- Wetlands
 			typeID = RaceID.ArchRaceDwarf,
 		},
 		["13:0:0"] = {
@@ -1703,10 +1698,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 525, --Frostfire Ridge
 			typeID = RaceID.ArchRaceDraenorOrc,
 		},
-		["572:0:0"] = {
-			-- Deadgrin Ruins Digsite
-			id = 308005,
-			mapID = 949,
+		["572:5648:1828"] = {
+			id = 1820, -- Deadgrin Ruins Digsite
+			mapID = 543, -- Gorgrond
 			typeID = RaceID.ArchRaceDraenorOrc,
 		},
 		["572:0:0"] = {
@@ -1715,10 +1709,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 950,
 			typeID = RaceID.ArchRaceDraenorOrc,
 		},
-		["572:0:0"] = {
-			-- Duskfall Island Digsite
-			id = 307964,
-			mapID = 946,
+		["572:2269:1739"] = {
+			id = 1780, -- Duskfall Island Digsite
+			mapID = 535, -- Talador
 			typeID = RaceID.ArchRaceOgre,
 		},
 		["572:0:0"] = {
@@ -1852,10 +1845,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 949,
 			typeID = RaceID.ArchRaceOgre,
 		},
-		["572:0:0"] = {
-			-- Rumbling Plateau Digsite
-			id = 307993,
-			mapID = 950,
+		["572:4334:4750"] = {
+			id = 1808, -- Rumbling Plateau Digsite
+			mapID = 550, -- Nagrand
 			typeID = RaceID.ArchRaceDraenorOrc,
 		},
 		["572:0:0"] = {
@@ -1894,10 +1886,9 @@ function private.InitializeDigsiteTemplates()
 			maxFindCount = 13,
 			typeID = RaceID.ArchRaceOgre,
 		},
-		["572:0:0"] = {
-			-- The Broken Spine Digsite
-			id = 308007,
-			mapID = 949,
+		["572:5792:1452"] = {
+			id = 1822, -- The Broken Spine Digsite
+			mapID = 543, -- Gorgrond
 			typeID = RaceID.ArchRaceOgre,
 		},
 		["572:0:0"] = {
@@ -1985,10 +1976,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 641, --Val'sharah
 			typeID = RaceID.ArchRaceHighborneNightElves,
 		},
-		["619:0:0"] = {
-			-- Digsite: Black Rook Hold
-			id = 354080,
-			mapID = 1018,
+		["619:3016:7478"] = {
+			id = 1998, -- Digsite: Black Rook Hold
+			mapID = 641, -- Val'sharah
 			typeID = RaceID.ArchRaceHighborneNightElves,
 		},
 		["619:0:0"] = {
@@ -2290,10 +2280,9 @@ function private.InitializeDigsiteTemplates()
 			mapID = 1033,
 			typeID = RaceID.ArchRaceDemons,
 		},
-		["619:0:0"] = {
-			-- Digsite: Sundersong Glade
-			id = 354087,
-			mapID = 1018,
+		["619:3074:5591"] = {
+			id = 2000, -- Digsite: Sundersong Glade
+			mapID = 641, -- Val'sharah
 			typeID = RaceID.ArchRaceHighborneNightElves,
 		},
 		["619:0:0"] = {
@@ -2389,13 +2378,13 @@ function private.InitializeDigsiteTemplates()
 			mapID = 895, -- Tiragarde Sound
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:0:0"] = {
-			id = 0, -- Digsite: Valley View
+		["876:1429:-296"] = {
+			id = 2403, -- Digsite: Fernwood Ridge
 			mapID = 895, -- Tiragarde Sound
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:0:0"] = {
-			id = 0, -- Digsite: Vigil Hill
+		["876:-671:961"] = {
+			id = 2407, -- Digsite: Vigil Hill
 			mapID = 895, -- Tiragarde Sound
 			typeID = RaceID.ArchRaceDrust,
 		},
@@ -2404,92 +2393,112 @@ function private.InitializeDigsiteTemplates()
 			mapID = 895, -- Tiragarde Sound
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:-234:434"] = {
+		["876:0:0"] = {
 			id = 0, -- Digsite: Placid Springs
 			mapID = 895, -- Tiragarde Sound
 			typeID = RaceID.ArchRaceDrust,
-		},		
-		["876:-7:3839"] = {
-			id = 2423, -- Digsite: Corlain
-			mapID = 896, --Drustvar
+		},
+		["876:-1324:-1159"] = {
+			id = 2413, -- Digsite: Deathmist Hills
+			mapID = 895, -- Tiragarde Sound
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:-922:3815"] = {
-			id = 2427, -- Digsite: Crimson Forest
-			mapID = 896, --Drustvar
+		["876:-1311:1858"] = {
+			id = 2415, -- Digsite: Gol Koval
+			mapID = 896, -- Drustvar
 			typeID = RaceID.ArchRaceDrust,
 		},
 		["876:0:0"] = {
 			id = 0, -- Digsite: Arom's Crossing
-			mapID = 896, --Drustvar
+			mapID = 896, -- Drustvar
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:0:0"] = {
-			id = 0, -- Digsite: Brackish Coast
-			mapID = 896, --Drustvar
+		["876:341:1539"] = {
+			id = 2419, -- Digsite: Brackish Coast
+			mapID = 896, -- Drustvar
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:-7:3839"] = {
+			id = 2423, -- Digsite: Corlain
+			mapID = 896, -- Drustvar
 			typeID = RaceID.ArchRaceDrust,
 		},
 		["876:0:0"] = {
 			id = 0, -- Digsite: Hunter's Run
-			mapID = 896, --Drustvar
+			mapID = 896, -- Drustvar
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:0:0"] = {
-			id = 0, -- Digsite: Iceveil Glacier
-			mapID = 896, --Drustvar
+		["876:-922:3815"] = {
+			id = 2427, -- Digsite: Crimson Forest
+			mapID = 896, -- Drustvar
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:-1506:3324"] = {
+			id = 2429, -- Digsite: Iceveil Glacier
+			mapID = 896, -- Drustvar
 			typeID = RaceID.ArchRaceDrust,
 		},
 		["876:0:0"] = {
 			id = 0, -- Digsite: Whitegrove Chapel
-			mapID = 896, --Drustvar
+			mapID = 896, -- Drustvar
+			typeID = RaceID.ArchRaceDrust,
+		},
+		["876:2573:2017"] = {
+			id = 2431, -- Digsite: Seabreeze Shallows
+			mapID = 942, -- Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
 		["876:2539:548"] = {
 			id = 2435, -- Digsite: Goldfield Farmstead
-			mapID = 942, --Stormsong Valley
+			mapID = 942, -- Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},		
 		["876:2281:-227"] = {
 			id = 2437, -- Digsite: Roaming Hills
-			mapID = 942, --Stormsong Valley
+			mapID = 942, -- Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
 		["876:3311:-225"] = {
 			id = 2439, -- Digsite: Dire Hills
-			mapID = 942, --Stormsong Valley
+			mapID = 942, -- Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:0:0"] = {
-			id = 0, -- Digsite: Briny Flats
-			mapID = 942, --Stormsong Valley
+		["876:3025:649"] = {
+			id = 2441, -- Digsite: Drowned Lands
+			mapID = 942, -- Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:0:0"] = {
-			id = 0, -- Digsite: Drowned Lands
-			mapID = 942, --Stormsong Valley
+		["876:3187:1220"] = {
+			id = 2443, -- Digsite: Briny Flats
+			mapID = 942, -- Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
 		["876:0:0"] = {
 			id = 0, -- Digsite: Millstone Hills
-			mapID = 942, --Stormsong Valley
+			mapID = 942, -- Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
-		["876:0:0"] = {
-			id = 0, -- Digsite: Windwhisper Summit
-			mapID = 942, --Stormsong Valley
+		["876:4138:-249"] = {
+			id = 2445, -- Digsite: Windwhisper Summit
+			mapID = 942, -- Stormsong Valley
 			typeID = RaceID.ArchRaceDrust,
 		},
 		-- ----------------------------------------------------------------------------
 		-- Zandalar
 		-- ----------------------------------------------------------------------------
 
+		["875:-2343:-620"] = {
+			id = 2451, -- Digsite: Dreadpearl Shallows
+			mapID = 862, -- Zuldazar
+			typeID = RaceID.ArchRaceZandalari,
+		},
 		["875:-749:-1172"] = {
 			id = 2453, -- Digsite: Atal'Gral
 			mapID = 862, -- Zuldazar
 			typeID = RaceID.ArchRaceZandalari,
 		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Dreadpearl Shallows
+		["875:-493:-166"] = {
+			id = 2455, -- Digsite: Savagelands
 			mapID = 862, -- Zuldazar
 			typeID = RaceID.ArchRaceZandalari,
 		},
@@ -2498,13 +2507,8 @@ function private.InitializeDigsiteTemplates()
 			mapID = 862, -- Zuldazar
 			typeID = RaceID.ArchRaceZandalari,
 		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: The Rivermarsh
-			mapID = 862, -- Zuldazar
-			typeID = RaceID.ArchRaceZandalari,
-		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Savagelands
+		["875:628:-815"] = {
+			id = 2459, -- Digsite: Zeb'ahari
 			mapID = 862, -- Zuldazar
 			typeID = RaceID.ArchRaceZandalari,
 		},
@@ -2513,39 +2517,39 @@ function private.InitializeDigsiteTemplates()
 			mapID = 862, -- Zuldazar
 			typeID = RaceID.ArchRaceZandalari,
 		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Zeb'ahari
-			mapID = 862, -- Zuldazar
+		["875:566:1168"] = {
+			id = 2461, -- Digsite: The Rivermarsh
+			mapID = 863, -- Nazmir
 			typeID = RaceID.ArchRaceZandalari,
 		},
 		["875:1109:2069"] = {
 			id = 2463, -- Digsite: Plains of Tojek
-			mapID = 863, --Nazmir
+			mapID = 863, -- Nazmir
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:1475:1355"] = {
+			id = 2465, -- Digsite: Terrace of Sorrows
+			mapID = 863, -- Nazmir
 			typeID = RaceID.ArchRaceZandalari,
 		},
 		["875:2392:1771"] = {
 			id = 2467, -- Digsite: The Far Reach
-			mapID = 863, --Nazmir
+			mapID = 863, -- Nazmir
 			typeID = RaceID.ArchRaceZandalari,
 		},
 		["875:2305:1002"] = {
 			id = 2469, -- Digsite: Natha'vor
-			mapID = 863, --Nazmir
+			mapID = 863, -- Nazmir
 			typeID = RaceID.ArchRaceZandalari,
 		},
 		["875:0:0"] = {
 			id = 0, -- Digsite: Razorjaw River
-			mapID = 863, --Nazmir
+			mapID = 863, -- Nazmir
 			typeID = RaceID.ArchRaceZandalari,
 		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Terrace of Sorrows
-			mapID = 863, --Nazmir
-			typeID = RaceID.ArchRaceZandalari,
-		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Upper Frogmarsh
-			mapID = 863, --Nazmir
+		["875:1982:-745"] = {
+			id = 2473, -- Digsite: Upper Frogmarsh
+			mapID = 863, -- Nazmir
 			typeID = RaceID.ArchRaceZandalari,
 		},
 		["875:999:658"] = {
@@ -2573,8 +2577,13 @@ function private.InitializeDigsiteTemplates()
 			mapID = 864, -- Vol'dun
 			typeID = RaceID.ArchRaceZandalari,
 		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Whistlebloom Oasis
+		["875:1516:3919"] = {
+			id = 2483, -- Digsite: Whistlebloom Oasis
+			mapID = 864, -- Vol'dun
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:2325:3340"] = {
+			id = 2489, -- Digsite: Court of Zak'rajan
 			mapID = 864, -- Vol'dun
 			typeID = RaceID.ArchRaceZandalari,
 		},
