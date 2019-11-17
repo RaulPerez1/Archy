@@ -2502,18 +2502,13 @@ function private.InitializeDigsiteTemplates()
 			mapID = 862, -- Zuldazar
 			typeID = RaceID.ArchRaceZandalari,
 		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Old Merchant Road
+		["875:-516:1502"] = {
+			id = 2457, -- Digsite: Old Merchant Road
 			mapID = 862, -- Zuldazar
 			typeID = RaceID.ArchRaceZandalari,
 		},
 		["875:628:-815"] = {
 			id = 2459, -- Digsite: Zeb'ahari
-			mapID = 862, -- Zuldazar
-			typeID = RaceID.ArchRaceZandalari,
-		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Tusk Isle
 			mapID = 862, -- Zuldazar
 			typeID = RaceID.ArchRaceZandalari,
 		},
@@ -2557,6 +2552,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 863, --Nazmir
 			typeID = RaceID.ArchRaceZandalari,
 		},
+		["875:1223:2895"] = {
+			id = 2477, -- Digsite: Verdant Plateau
+			mapID = 864, -- Vol'dun
+			typeID = RaceID.ArchRaceZandalari,
+		},
 		["875:750:3550"] = {
 			id = 2479, -- Digsite: Arid Basin
 			mapID = 864, --Vol'dun
@@ -2567,18 +2567,13 @@ function private.InitializeDigsiteTemplates()
 			mapID = 864, -- Vol'dun
 			typeID = RaceID.ArchRaceZandalari,
 		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: The Eternal Spring
-			mapID = 864, -- Vol'dun
-			typeID = RaceID.ArchRaceZandalari,
-		},
-		["875:0:0"] = {
-			id = 0, -- Digsite: Verdant Plateau
-			mapID = 864, -- Vol'dun
-			typeID = RaceID.ArchRaceZandalari,
-		},
 		["875:1516:3919"] = {
 			id = 2483, -- Digsite: Whistlebloom Oasis
+			mapID = 864, -- Vol'dun
+			typeID = RaceID.ArchRaceZandalari,
+		},
+		["875:0:0"] = {
+			id = 0, -- Digsite: The Eternal Spring
 			mapID = 864, -- Vol'dun
 			typeID = RaceID.ArchRaceZandalari,
 		},
