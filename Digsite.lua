@@ -158,7 +158,7 @@ function private.AddDigsite(digsiteTemplate, digsiteName, coordX, coordY)
 		mapID = digsiteTemplate.mapID,
 		maxFindCount = digsiteTemplate.maxFindCount,
 		name = digsiteName,
-		race = private.Races[digsiteTemplate.typeID],
+		race = private.Races[digsiteTemplate.raceID],
 		stats = Archy.db.char.digsites.stats[digsiteTemplate.id],
 		surveyNodes = {},
 		zoneID = zoneID,

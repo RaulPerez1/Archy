@@ -501,16 +501,10 @@ function UpdateAllSites()
 		for continentZoneIndex = 1, #continentData.zones do
 			local zone = ZONE_DATA[continentData.zones[continentZoneIndex]]
 			for key, digsiteData in pairs(C_ResearchInfo.GetDigSitesForMap(zone.mapID)) do
-
-				-- GetDigSitesForMap returns digsites from adjacent maps since they're visible
-				-- to it so normalize the key by using the world position
-				local _, worldPosition = C_Map.GetWorldPosFromMapPos(zone.mapID, digsiteData.position)
-				local siteKey = ("%d:%0.0f:%0.0f"):format(continentID, worldPosition.x, worldPosition.y)
-
-				local digsiteTemplate = private.DIGSITE_TEMPLATES[siteKey]
+				local digsiteTemplate = private.DIGSITE_TEMPLATES[digsiteData.researchSiteID]
 				if digsiteTemplate then
 					if digsiteTemplate.mapID == zone.mapID then
-						local digsite = private.Digsites[siteKey]			
+						local digsite = private.Digsites[digsiteData.researchSiteID]			
 						if not digsite then
 							digsite = private.AddDigsite(digsiteTemplate, digsiteData.name, digsiteData.position.x, digsiteData.position.y)
 						end
@@ -521,7 +515,7 @@ function UpdateAllSites()
 						Debug("Missing dig site data:")
 					end
 					unknownSites = unknownSites + 1
-					Debug("\n\t\t[\""..siteKey.."\"] = {\n\t\t\tid = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\ttypeID = RaceID.Unknown,\n\t\t},")
+					Debug("\n\t\t["..digsiteData.researchSiteID.."] = {\n\t\t\t\id = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\traceID = RaceID.Unknown,\n\t\t},")
 				end
 			end		
 		end
@@ -898,15 +892,9 @@ local SUBCOMMAND_FUNCS = {
 			for continentZoneIndex = 1, #continentData.zones do
 				local zone = ZONE_DATA[continentData.zones[continentZoneIndex]]
 				for key, digsiteData in pairs(C_ResearchInfo.GetDigSitesForMap(zone.mapID)) do
-
-					-- GetDigSitesForMap returns digsites from adjacent maps since they're visible
-					-- to it so normalize the key by using the world position
-					local _, worldPosition = C_Map.GetWorldPosFromMapPos(zone.mapID, digsiteData.position)
-					local siteKey = ("%d:%0.0f:%0.0f"):format(continentID, worldPosition.x, worldPosition.y)
-
 					if not private.DIGSITE_TEMPLATES[siteKey] and not sites[siteKey] then
-						Debug("\n\t\t[\""..siteKey.."\"] = {\n\t\t\tid = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\ttypeID = RaceID.Unknown,\n\t\t},")
-						sites[siteKey] = true
+						Debug("\n\t\t["..digsiteData.researchSiteID.."] = {\n\t\t\t\id = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\traceID = RaceID.Unknown,\n\t\t},")
+						sites[digsiteData.researchSiteID] = true
 						found = found + 1
 					end
 				end
@@ -924,12 +912,7 @@ local SUBCOMMAND_FUNCS = {
 			for continentZoneIndex = 1, #continentData.zones do
 				local zone = ZONE_DATA[continentData.zones[continentZoneIndex]]
 				for key, digsiteData in pairs(C_ResearchInfo.GetDigSitesForMap(zone.mapID)) do
-
-					-- GetDigSitesForMap returns digsites from adjacent maps since they're visible
-					-- to it so normalize the key by using the world position
-					local _, worldPosition = C_Map.GetWorldPosFromMapPos(zone.mapID, digsiteData.position)
-					local siteKey = ("%d:%0.0f:%0.0f"):format(continentID, worldPosition.x, worldPosition.y)
-					Debug("\n\t\t[\""..siteKey.."\"] = {\n\t\t\tid = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\ttypeID = RaceID.Unknown,\n\t\t},")
+					Debug("\n\t\t["..digsiteData.researchSiteID.."] = {\n\t\t\t\id = "..digsiteData.researchSiteID..", -- "..digsiteData.name.."\n\t\t\tmapID = "..zone.mapID..", -- "..zone.name.."\n\t\t\traceID = RaceID.Unknown,\n\t\t},")
 				end
 			end
 		end
