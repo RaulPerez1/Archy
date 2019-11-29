@@ -1084,6 +1084,21 @@ function private.InitializeDigsiteTemplates()
 		-- ----------------------------------------------------------------------------
 		-- Pandaria
 		-- ----------------------------------------------------------------------------
+		[923] = {
+			id = 923, -- Tian Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[934] = {
+			id = 934, -- Ruins of Gan Shi Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[936] = {
+			id = 936, -- Emperor's Omen Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[957] = {
 			id = 957, -- North Great Wall Digsite
 			mapID = 376, -- Valley of the Four Winds
@@ -1091,6 +1106,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[987] = {
 			id = 987, -- Krasarang Wilds Digsite
+			mapID = 418, -- Krasarang Wilds
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[989] = {
+			id = 989, -- Lost Dynasty Digsite
 			mapID = 418, -- Krasarang Wilds
 			raceID = RaceID.ArchRaceMogu,
 		},
@@ -1114,8 +1134,28 @@ function private.InitializeDigsiteTemplates()
 			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[1019] = {
+			id = 1019, -- Grumblepaw Ranch Digsite
+			mapID = 379, -- Kun-Lai Summit
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[1029] = {
+			id = 1029, -- Kun-Lai Peak Digsite
+			mapID = 379, -- Kun-Lai Summit
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[1033] = {
 			id = 1033, -- Forest Heart Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[1037] = {
+			id = 1037, -- Great Bridge Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[1039] = {
+			id = 1039, -- Orchard Digsite
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
@@ -1124,8 +1164,18 @@ function private.InitializeDigsiteTemplates()
 			mapID = 390, --Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[1286] = {
+			id = 1286, -- Mistfall Village Digsite
+			mapID = 390, -- Vale of Eternal Blossoms
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[1308] = {
 			id = 1308, -- West Ruins of Guo-Lai Digsite
+			mapID = 390, -- Vale of Eternal Blossoms
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1322] = {
+			id = 1322, -- North Summer Fields Digsite
 			mapID = 390, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
@@ -1133,6 +1183,21 @@ function private.InitializeDigsiteTemplates()
 			id = 1332, -- Sra'thik Digsite
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRacePandaren,
+		},
+		[1338] = {
+			id = 1338, -- Fire Camp Osul Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1352] = {
+			id = 1352, -- Writhingwood Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1465] = {
+			id = 1465, -- Sra'thik Swarmdock Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMantid,
 		},
 		[1467] = {
 			id = 1467, -- West Sra'vess Digsite
@@ -1144,9 +1209,29 @@ function private.InitializeDigsiteTemplates()
 			mapID = 388, --Townlong Steppes
 			raceID = RaceID.ArchRaceMantid,
 		},
+		[1471] = {
+			id = 1471, -- Kzzok Warcamp Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1485] = {
+			id = 1485, -- North Sik'vess Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1489] = {
+			id = 1489, -- Kypari'ik Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMantid,
+		},
 		[1491] = {
 			id = 1491, -- Zan'vess Digsite
 			mapID = 422, --Dread Wastes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1501] = {
+			id = 1501, -- Kypari'zar Digsite
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
@@ -1168,12 +1253,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- Lost Dynasty Digsite
-			id = 66951,
-			mapID = 418, -- Krasarang Wilds
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
 			-- South Ruins of Dojan Digsite
 			id = 92210,
 			mapID = 418, -- Krasarang Wilds
@@ -1186,20 +1265,8 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
-			-- Emperor's Omen Digsite
-			id = 66817,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
 			-- Gong of Hope Digsite
 			id = 67023,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Great Bridge Digsite
-			id = 67025,
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
@@ -1208,18 +1275,6 @@ function private.InitializeDigsiteTemplates()
 			id = 67031,
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Orchard Digsite
-			id = 67027,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Ruins of Gan Shi Digsite
-			id = 66795,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
 			-- NEEDS UPDATE
@@ -1252,32 +1307,14 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- Tian Digsite
-			id = 66784,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
 			-- Tiger's Wood Digsite
 			id = 66767,
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
-			-- Mistfall Village Digsite
-			id = 92022,
-			mapID = 390, -- Vale of Eternal Blossoms
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
 			-- North Ruins of Guo-Lai Digsite
 			id = 92030,
-			mapID = 390, -- Vale of Eternal Blossoms
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- North Summer Fields Digsite
-			id = 92162,
 			mapID = 390, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
@@ -1324,12 +1361,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
-			-- Fire Camp Osul Digsite
-			id = 92178,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
 			-- Hatred's Vice Digsite
 			id = 92180,
 			mapID = 388, -- Townlong Steppes
@@ -1342,22 +1373,10 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
-			-- Kzzok Warcamp Digsite
-			id = 177493,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
 			-- Niuzao Temple Digsite
 			id = 92174,
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- North Sik'vess Digsite
-			id = 177507,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- Shanze'Dao Digsite
@@ -1368,12 +1387,6 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Sik'vess Digsite
 			id = 177503,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
-			-- Sra'thik Swarmdock Digsite
-			id = 177487,
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRaceMantid,
 		},
@@ -1392,73 +1405,49 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Amber Quarry Digsite
 			id = 177517,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- Chow Farmstead Digsite
 			id = 66987,
-			mapID = 809,
+			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
 			-- Destroyed Village Digsite
 			id = 66979,
-			mapID = 809,
+			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
 			-- Gate to Golden Valley Digsite
 			id = 66967,
-			mapID = 809,
+			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Grumblepaw Ranch Digsite
-			id = 66985,
-			mapID = 809,
-			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
 			-- Kor'vess Digsite
 			id = 177485,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
-			-- Kun-Lai Peak Digsite
-			id = 67005,
-			mapID = 809,
-			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
 			-- Kypari Vor Digsite
 			id = 177529,
-			mapID = 858,
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
-			-- Kypari'ik Digsite
-			id = 177511,
-			mapID = 858,
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
-			-- Kypari'zar Digsite
-			id = 177523,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- Lake of Stars Digsite
 			id = 177525,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- Lake of Stars Digsite
 			id = 92200,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
@@ -1470,7 +1459,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Old Village Digsite
 			id = 66983,
-			mapID = 809,
+			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
@@ -1488,7 +1477,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Remote Village Digsite
 			id = 66973,
-			mapID = 809,
+			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
@@ -1500,13 +1489,13 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Small Gate Digsite
 			id = 66991,
-			mapID = 809,
+			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
 			-- Snow Covered Hills Digsite
 			id = 66969,
-			mapID = 809,
+			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
@@ -1524,19 +1513,19 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Terrace of Gurthan Digsite
 			id = 92202,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMogu,
 		},		
 		[0] = {
 			-- The Briny Muck Digsite
 			id = 177519,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- The Clutches of Shek'zeer Digsite
 			id = 177509,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
@@ -1554,7 +1543,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Venomous Ledge Digsite
 			id = 177515,
-			mapID = 858,
+			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
@@ -1566,14 +1555,8 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- NEEDS UPDATE
 			id = 66989,
-			mapID = 809,
+			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Writhingwood Digsite
-			id = 92206,
-			mapID = 858,
-			raceID = RaceID.ArchRaceMogu,
 		},
 
 		-- ----------------------------------------------------------------------------
