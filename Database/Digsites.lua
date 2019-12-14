@@ -1084,6 +1084,11 @@ function private.InitializeDigsiteTemplates()
 		-- ----------------------------------------------------------------------------
 		-- Pandaria
 		-- ----------------------------------------------------------------------------
+		[918] = {
+			id = 918, -- Tiger's Wood Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[923] = {
 			id = 923, -- Tian Digsite
 			mapID = 371, -- The Jade Forest
@@ -1229,8 +1234,18 @@ function private.InitializeDigsiteTemplates()
 			mapID = 422, --Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
+		[1493] = {
+			id = 1493, -- Venomous Ledge Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMantid,
+		},
 		[1501] = {
 			id = 1501, -- Kypari'zar Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1503] = {
+			id = 1503, -- Lake of Stars Digsite
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
@@ -1305,12 +1320,6 @@ function private.InitializeDigsiteTemplates()
 			id = 66890,
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Tiger's Wood Digsite
-			id = 66767,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
 			-- North Ruins of Guo-Lai Digsite
@@ -1440,12 +1449,6 @@ function private.InitializeDigsiteTemplates()
 		},
 		[0] = {
 			-- Lake of Stars Digsite
-			id = 177525,
-			mapID = 422, -- Dread Wastes
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
-			-- Lake of Stars Digsite
 			id = 92200,
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMogu,
@@ -1539,12 +1542,6 @@ function private.InitializeDigsiteTemplates()
 			id = 66925,
 			mapID = 376, -- Valley of the Four Winds
 			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Venomous Ledge Digsite
-			id = 177515,
-			mapID = 422, -- Dread Wastes
-			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- NEEDS UPDATE
@@ -1882,6 +1879,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
 		},
+		[1912] = {
+			id = 1912, -- Digsite: Moonwhisper Gulch
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[1971] = {
 			id = 1971, -- Digsite: Farondale
 			mapID = 630, -- Azsuna
@@ -1917,6 +1919,26 @@ function private.InitializeDigsiteTemplates()
 			mapID = 641, --Val'sharah
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[2027] = {
+			id = 2027, -- Digsite: Eastern Ambervale
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[2031] = {
+			id = 2031, -- Digsite: Gates of the City
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[2033] = {
+			id = 2033, -- Digsite: Meredil
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[2035] = {
+			id = 2035, -- Digsite: Crimson Thicket
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[0] = {
 			-- Digsite: Aggramar's Vault
 			id = 346440,
@@ -1932,7 +1954,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Anora Hollow
 			id = 363064,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
@@ -1961,14 +1983,8 @@ function private.InitializeDigsiteTemplates()
 		},
 		[0] = {
 			-- Digsite: Crimson Thicket
-			id = 363027,
-			mapID = 1033,
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
-			-- Digsite: Crimson Thicket
 			id = 363060,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
@@ -1990,12 +2006,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
-			-- Digsite: Eastern Ambervale
-			id = 363017,
-			mapID = 1033,
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
 			-- Digsite: Fallen Kings
 			id = 353965,
 			mapID = 1017,
@@ -2004,13 +2014,13 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Feathermane Hunting Grounds
 			id = 346527,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
 			-- Digsite: Felsoul Hold
 			id = 363056,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
@@ -2026,12 +2036,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
-			-- Digsite: Gates of the City
-			id = 363021,
-			mapID = 1033,
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
 			-- Digsite: Gates of Valor
 			id = 350063,
 			mapID = 1017,
@@ -2040,7 +2044,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Koralune Estate
 			id = 363029,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
@@ -2063,21 +2067,9 @@ function private.InitializeDigsiteTemplates()
 		},
 		[0] = {
 			-- Digsite: Meredil
-			id = 363025,
-			mapID = 1033,
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
-			-- Digsite: Meredil
 			id = 363036,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Moonwhisper Gulch
-			id = 346531,
-			mapID = 1033,
-			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
 			-- Digsite: Nor'Danil Wellspring
@@ -2094,7 +2086,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Northern Moonfall Retreat
 			id = 363019,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
@@ -2172,7 +2164,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Southern Suramar
 			id = 363058,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
@@ -2202,7 +2194,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Sundered Shoals
 			id = 363062,
-			mapID = 1033,
+			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
@@ -2307,7 +2299,7 @@ function private.InitializeDigsiteTemplates()
 			mapID = 895, -- Tiragarde Sound
 			raceID = RaceID.ArchRaceDrust,
 		},
-		[0] = {
+		[2411] = {
 			id = 2411, -- Digsite: Stagheart Cliffs
 			mapID = 895, -- Tiragarde Sound
 			raceID = RaceID.ArchRaceDrust,
@@ -2322,13 +2314,28 @@ function private.InitializeDigsiteTemplates()
 			mapID = 896, -- Drustvar
 			raceID = RaceID.ArchRaceDrust,
 		},
+		[2417] = {
+			id = 2417, -- Digsite: Hunter's Run
+			mapID = 896, -- Drustvar
+			raceID = RaceID.ArchRaceDrust,
+		},
 		[2419] = {
 			id = 2419, -- Digsite: Brackish Coast
 			mapID = 896, -- Drustvar
 			raceID = RaceID.ArchRaceDrust,
 		},
+		[2421] = {
+			id = 2421, -- Digsite: Arom's Crossing
+			mapID = 896, -- Drustvar
+			raceID = RaceID.ArchRaceDrust,
+		},
 		[2423] = {
 			id = 2423, -- Digsite: Corlain
+			mapID = 896, -- Drustvar
+			raceID = RaceID.ArchRaceDrust,
+		},
+		[2425] = {
+			id = 2425, -- Digsite: Whitegrove Chapel
 			mapID = 896, -- Drustvar
 			raceID = RaceID.ArchRaceDrust,
 		},
@@ -2342,13 +2349,13 @@ function private.InitializeDigsiteTemplates()
 			mapID = 896, -- Drustvar
 			raceID = RaceID.ArchRaceDrust,
 		},
-		[0] = {
-			id = 2433, -- Digsite: Millstone Hills
+		[2431] = {
+			id = 2431, -- Digsite: Seabreeze Shallows
 			mapID = 942, -- Stormsong Valley
 			raceID = RaceID.ArchRaceDrust,
 		},
-		[2431] = {
-			id = 2431, -- Digsite: Seabreeze Shallows
+		[2433] = {
+			id = 2433, -- Digsite: Millstone Hills
 			mapID = 942, -- Stormsong Valley
 			raceID = RaceID.ArchRaceDrust,
 		},
@@ -2380,21 +2387,6 @@ function private.InitializeDigsiteTemplates()
 		[2445] = {
 			id = 2445, -- Digsite: Windwhisper Summit
 			mapID = 942, -- Stormsong Valley
-			raceID = RaceID.ArchRaceDrust,
-		},
-		[0] = {
-			id = 0, -- Digsite: Arom's Crossing
-			mapID = 896, -- Drustvar
-			raceID = RaceID.ArchRaceDrust,
-		},
-		[0] = {
-			id = 0, -- Digsite: Hunter's Run
-			mapID = 896, -- Drustvar
-			raceID = RaceID.ArchRaceDrust,
-		},
-		[0] = {
-			id = 0, -- Digsite: Whitegrove Chapel
-			mapID = 896, -- Drustvar
 			raceID = RaceID.ArchRaceDrust,
 		},
 		-- ----------------------------------------------------------------------------
