@@ -1104,9 +1104,34 @@ function private.InitializeDigsiteTemplates()
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
+		[938] = {
+			id = 938, -- The Arboretum Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[955] = {
+			id = 955, -- Singing Marshes Digsite
+			mapID = 376, -- Valley of the Four Winds
+			raceID = RaceID.ArchRaceMogu,
+		},
 		[957] = {
 			id = 957, -- North Great Wall Digsite
 			mapID = 376, -- Valley of the Four Winds
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[963] = {
+			id = 963, -- Torjari Pit Digsite
+			mapID = 376, -- Valley of the Four Winds
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[967] = {
+			id = 967, -- The Spring Road Digsite
+			mapID = 433, -- The Veiled Stair
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[983] = {
+			id = 983, -- Ruins of Korja Digsite
+			mapID = 418, -- Krasarang Wilds
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[987] = {
@@ -1139,6 +1164,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[1017] = {
+			id = 1017, -- Old Village Digsite
+			mapID = 379, -- Kun-Lai Summit
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[1019] = {
 			id = 1019, -- Grumblepaw Ranch Digsite
 			mapID = 379, -- Kun-Lai Summit
@@ -1164,6 +1194,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
+		[1047] = {
+			id = 1047, -- Den of Sorrow Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[0] = {
 			id = 1294, -- South Ruins of Guo-Lai Digsite
 			mapID = 390, --Vale of Eternal Blossoms
@@ -1184,6 +1219,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 390, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[1326] = {
+			id = 1326, -- East Summer Fields Digsite
+			mapID = 390, -- Vale of Eternal Blossoms
+			raceID = RaceID.ArchRaceMogu,
+		},
 		[1332] = {
 			id = 1332, -- Sra'thik Digsite
 			mapID = 388, -- Townlong Steppes
@@ -1194,10 +1234,30 @@ function private.InitializeDigsiteTemplates()
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[1346] = {
+			id = 1346, -- Lake of Stars Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1348] = {
+			id = 1348, -- Terrace of Gurthan Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMogu,
+		},
 		[1352] = {
 			id = 1352, -- Writhingwood Digsite
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMogu,
+		},
+		[1358] = {
+			id = 1358, -- North Ruins of Dojan Digsite
+			mapID = 418, -- Krasarang Wilds
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1463] = {
+			id = 1463, -- Kor'vess Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMantid,
 		},
 		[1465] = {
 			id = 1465, -- Sra'thik Swarmdock Digsite
@@ -1216,6 +1276,21 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1471] = {
 			id = 1471, -- Kzzok Warcamp Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1473] = {
+			id = 1473, -- East Sra'vess Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1479] = {
+			id = 1479, -- Ikz'ka Ridge Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1481] = {
+			id = 1481, -- Sik'vess Digsite
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRaceMantid,
 		},
@@ -1239,6 +1314,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
+		[1497] = {
+			id = 1497, -- The Briny Muck Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMantid,
+		},
 		[1501] = {
 			id = 1501, -- Kypari'zar Digsite
 			mapID = 422, -- Dread Wastes
@@ -1256,28 +1336,10 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- North Ruins of Dojan Digsite
-			id = 92212,
-			mapID = 418, -- Krasarang Wilds
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Ruins of Korja Digsite
-			id = 66945,
-			mapID = 418, -- Krasarang Wilds
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
 			-- South Ruins of Dojan Digsite
 			id = 92210,
 			mapID = 418, -- Krasarang Wilds
 			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Den of Sorrow Digsite
-			id = 67035,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
 			-- Gong of Hope Digsite
@@ -1310,12 +1372,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
-			-- The Arboretum Digsite
-			id = 66854,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
 			-- Thunderwood Digsite
 			id = 66890,
 			mapID = 371, -- The Jade Forest
@@ -1340,12 +1396,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- East Summer Fields Digsite
-			id = 92166,
-			mapID = 390, -- Vale of Eternal Blossoms
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
 			-- Emperor's Approach Digsite
 			id = 92156,
 			mapID = 390, -- Vale of Eternal Blossoms
@@ -1364,22 +1414,10 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- East Sra'vess Digsite
-			id = 177495,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
 			-- Hatred's Vice Digsite
 			id = 92180,
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Ikz'ka Ridge Digsite
-			id = 177501,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- Niuzao Temple Digsite
@@ -1392,12 +1430,6 @@ function private.InitializeDigsiteTemplates()
 			id = 92196,
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Sik'vess Digsite
-			id = 177503,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- The Underbough Digsite
@@ -1436,33 +1468,15 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- Kor'vess Digsite
-			id = 177485,
-			mapID = 422, -- Dread Wastes
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
 			-- Kypari Vor Digsite
 			id = 177529,
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
-			-- Lake of Stars Digsite
-			id = 92200,
-			mapID = 422, -- Dread Wastes
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
 			-- North Fruited Fields Digsite
 			id = 66935,
 			mapID = 376, -- Valley of the Four Winds
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Old Village Digsite
-			id = 66983,
-			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
@@ -1482,12 +1496,6 @@ function private.InitializeDigsiteTemplates()
 			id = 66973,
 			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Singing Marshes Digsite
-			id = 66917,
-			mapID = 376, -- Valley of the Four Winds
-			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
 			-- Small Gate Digsite
@@ -1512,36 +1520,12 @@ function private.InitializeDigsiteTemplates()
 			id = 66923,
 			mapID = 376, -- Valley of the Four Winds
 			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Terrace of Gurthan Digsite
-			id = 92202,
-			mapID = 422, -- Dread Wastes
-			raceID = RaceID.ArchRaceMogu,
-		},		
-		[0] = {
-			-- The Briny Muck Digsite
-			id = 177519,
-			mapID = 422, -- Dread Wastes
-			raceID = RaceID.ArchRaceMantid,
-		},
+		},	
 		[0] = {
 			-- The Clutches of Shek'zeer Digsite
 			id = 177509,
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
-			-- The Spring Road Digsite
-			id = 66929,
-			mapID = 873,
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Torjari Pit Digsite
-			id = 66925,
-			mapID = 376, -- Valley of the Four Winds
-			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
 			-- NEEDS UPDATE
