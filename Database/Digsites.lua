@@ -1848,6 +1848,11 @@ function private.InitializeDigsiteTemplates()
 		-- ----------------------------------------------------------------------------
 		-- Broken Isles
 		-- ----------------------------------------------------------------------------
+		[1892] = {
+			id = 1892, -- Digsite: Southern Snowblind Mesa
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
 		[1896] = {
 			id = 1896, -- Digsite: Kal'delar
 			mapID = 641, --Val'sharah
@@ -1867,6 +1872,21 @@ function private.InitializeDigsiteTemplates()
 			id = 1912, -- Digsite: Moonwhisper Gulch
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[1955] = {
+			id = 1955, -- Digsite: The Witchwood
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
+		[1963] = {
+			id = 1963, -- Digsite: Sky Sepulcher
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
+		[1967] = {
+			id = 1967, -- Digsite: Dragon's Falls
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[1971] = {
 			id = 1971, -- Digsite: Farondale
@@ -1923,6 +1943,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[2079] = {
+			id = 2079, -- Digsite: Path of Huln
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
 		[0] = {
 			-- Digsite: Aggramar's Vault
 			id = 346440,
@@ -1944,7 +1969,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Bloodhunt Highland
 			id = 353983,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
@@ -1974,13 +1999,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Darkfeather Valley
 			id = 353987,
-			mapID = 1024,
-			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
-		[0] = {
-			-- Digsite: Dragon's Falls
-			id = 353993,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
@@ -2010,7 +2029,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Fields of An'she
 			id = 346475,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
@@ -2076,7 +2095,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Northern Snowblind Mesa
 			id = 353991,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
@@ -2088,13 +2107,13 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Pinerock Basin
 			id = 353979,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
 			-- Digsite: Prowler's Scratch
 			id = 353977,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
@@ -2112,7 +2131,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Screeching Bend
 			id = 346478,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren
 		},
 		[0] = {
@@ -2128,22 +2147,10 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
-			-- Digsite: Sky Sepulcher
-			id = 353989,
-			mapID = 1024,
-			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
-		[0] = {
 			-- Digsite: Southern Helmouth Shallows
 			id = 346447,
 			mapID = 1017,
 			raceID = RaceID.ArchRaceDemons
-		},
-		[0] = {
-			-- Digsite: Southern Snowblind Mesa
-			id = 346481,
-			mapID = 1024,
-			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
 			-- Digsite: Southern Suramar
@@ -2202,7 +2209,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: The Haglands
 			id = 353985,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
@@ -2224,12 +2231,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
-			-- Digsite: The Witchwood
-			id = 353981,
-			mapID = 1024,
-			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
-		[0] = {
 			-- Digsite: Timeworn Strand
 			id = 354025,
 			mapID = 630, -- Azsuna
@@ -2244,7 +2245,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Whitewater Wash
 			id = 344517,
-			mapID = 1024,
+			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
