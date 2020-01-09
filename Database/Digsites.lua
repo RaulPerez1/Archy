@@ -1209,8 +1209,18 @@ function private.InitializeDigsiteTemplates()
 			mapID = 390, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRacePandaren,
 		},
+		[1300] = {
+			id = 1300, -- Tu Shen Digsite
+			mapID = 390, -- Vale of Eternal Blossoms
+			raceID = RaceID.ArchRaceMogu,
+		},
 		[1308] = {
 			id = 1308, -- West Ruins of Guo-Lai Digsite
+			mapID = 390, -- Vale of Eternal Blossoms
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1318] = {
+			id = 1318, -- Emperor's Approach Digsite
 			mapID = 390, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
@@ -1247,6 +1257,11 @@ function private.InitializeDigsiteTemplates()
 		[1352] = {
 			id = 1352, -- Writhingwood Digsite
 			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1356] = {
+			id = 1356, -- South Ruins of Dojan Digsite
+			mapID = 418, -- Krasarang Wilds
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[1358] = {
@@ -1336,12 +1351,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- South Ruins of Dojan Digsite
-			id = 92210,
-			mapID = 418, -- Krasarang Wilds
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
 			-- Gong of Hope Digsite
 			id = 67023,
 			mapID = 371, -- The Jade Forest
@@ -1386,18 +1395,6 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- NEEDS UPDATE
 			id = 92020,
-			mapID = 390, -- Vale of Eternal Blossoms
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Tu Shen Digsite
-			id = 92038,
-			mapID = 390, -- Vale of Eternal Blossoms
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
-			-- Emperor's Approach Digsite
-			id = 92156,
 			mapID = 390, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
@@ -1527,22 +1524,15 @@ function private.InitializeDigsiteTemplates()
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
-		[0] = {
-			-- NEEDS UPDATE
-			id = 67039,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- NEEDS UPDATE
-			id = 66989,
-			mapID = 379, -- Kun-Lai Summit
-			raceID = RaceID.ArchRacePandaren,
-		},
 
 		-- ----------------------------------------------------------------------------
 		-- Draenor
 		-- ----------------------------------------------------------------------------
+		[1683] = {
+			id = 1683, -- Wor'gol Ridge Digsite
+			mapID = 525, -- Frostfire Ridge
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
 		[1685] = {
 			id = 1685, -- Daggermaw Flows Digsite
 			mapID = 525, --Frostfire Ridge
@@ -1553,8 +1543,43 @@ function private.InitializeDigsiteTemplates()
 			mapID = 525, -- Frostfire Ridge
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
+		[1689] = {
+			id = 1689, -- The Crackling Plains Digsite
+			mapID = 525, -- Frostfire Ridge
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
+		[1695] = {
+			id = 1695, -- Stonefang Ridge Digsite
+			mapID = 525, -- Frostfire Ridge
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
+		[1732] = {
+			id = 1732, -- Frostboar Drifts Digsite
+			mapID = 525, -- Frostfire Ridge
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
+		[1734] = {
+			id = 1734, -- Icewind Drifts Digsite
+			mapID = 525, -- Frostfire Ridge
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
+		[1736] = {
+			id = 1736, -- East Coldsnap Bluffs Digsite
+			mapID = 525, -- Frostfire Ridge
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
+		[1738] = {
+			id = 1738, -- Coldsnap Bluffs Digsite
+			mapID = 525, -- Frostfire Ridge
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
 		[1740] = {
 			id = 1740, -- Shaz'gul Digsite
+			mapID = 539, -- Shadowmoon Valley
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
+		[1744] = {
+			id = 1744, -- Anguish Fortress Digsite
 			mapID = 539, -- Shadowmoon Valley
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
@@ -1563,8 +1588,18 @@ function private.InitializeDigsiteTemplates()
 			mapID = 539, --Shadowmoon Valley
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
+		[1750] = {
+			id = 1750, -- Umbrafen Digsite
+			mapID = 539, -- Shadowmoon Valley
+			raceID = RaceID.ArchRaceOgre,
+		},
 		[1758] = {
 			id = 1758, -- Sethekk Hollow South Digsite
+			mapID = 542, -- Spires of Arak
+			raceID = RaceID.ArchRaceArakkoa,
+		},
+		[1762] = {
+			id = 1762, -- Veil Akraz Digsite
 			mapID = 542, -- Spires of Arak
 			raceID = RaceID.ArchRaceArakkoa,
 		},
@@ -1572,6 +1607,16 @@ function private.InitializeDigsiteTemplates()
 			id = 1764, -- Writhing Mire Digsite
 			mapID = 542, -- Spires of Arak
 			raceID = RaceID.ArchRaceOgre,
+		},
+		[1768] = {
+			id = 1768, -- Pinchwhistle Point Digsite
+			mapID = 542, -- Spires of Arak
+			raceID = RaceID.ArchRaceArakkoa,
+		},
+		[1770] = {
+			id = 1770, -- Bloodmane Valley Digsite
+			mapID = 542, -- Spires of Arak
+			raceID = RaceID.ArchRaceArakkoa,
 		},
 		[1774] = {
 			id = 1774, -- Apexis Excavation Digsite
@@ -1585,6 +1630,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1780] = {
 			id = 1780, -- Duskfall Island Digsite
+			mapID = 535, -- Talador
+			raceID = RaceID.ArchRaceOgre,
+		},
+		[1786] = {
+			id = 1786, -- Ango'rosh Digsite
 			mapID = 535, -- Talador
 			raceID = RaceID.ArchRaceOgre,
 		},
@@ -1633,21 +1683,13 @@ function private.InitializeDigsiteTemplates()
 			mapID = 543, -- Gorgrond
 			raceID = RaceID.ArchRaceOgre,
 		},
-		[0] = {
-			-- Coldsnap Bluffs Digsite
-			id = 307922,
-			mapID = 525, -- Frostfire Ridge
-			raceID = RaceID.ArchRaceDraenorOrc,
+		[1828] = {
+			id = 1828, -- Wildwood Wash Dam Digsite
+			mapID = 543, -- Gorgrond
+			raceID = RaceID.ArchRaceOgre,
 		},
-		[0] = {
-			-- East Coldsnap Bluffs Digsite
-			id = 307920,
-			mapID = 525, -- Frostfire Ridge
-			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
-			-- Frostboar Drifts Digsite
-			id = 307916,
+		[1832] = {
+			id = 1832, -- Southwind Cliffs Digsite
 			mapID = 525, -- Frostfire Ridge
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
@@ -1670,30 +1712,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
 		[0] = {
-			-- Icewind Drifts Digsite
-			id = 307918,
-			mapID = 525, -- Frostfire Ridge
-			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
-			-- Southwind Cliffs Digsite
-			id = 308018,
-			mapID = 525, -- Frostfire Ridge
-			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
-			-- The Crackling Plains Digsite
-			id = 264231,
-			mapID = 525, -- Frostfire Ridge
-			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
-			-- Wor'gol Ridge Digsite
-			id = 264225,
-			mapID = 525, -- Frostfire Ridge
-			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
 			-- Shimmering Moor Digsite
 			id = 307936,
 			mapID = 539, -- Shadowmoon Valley
@@ -1702,18 +1720,6 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Gloomshade Digsite
 			id = 307940,
-			mapID = 539, -- Shadowmoon Valley
-			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
-			-- Umbrafen Digsite
-			id = 307934,
-			mapID = 539, -- Shadowmoon Valley
-			raceID = RaceID.ArchRaceOgre,
-		},
-		[0] = {
-			-- Anguish Fortress Digsite
-			id = 307928,
 			mapID = 539, -- Shadowmoon Valley
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
@@ -1730,26 +1736,8 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceArakkoa,
 		},
 		[0] = {
-			-- Bloodmane Valley Digsite
-			id = 307954,
-			mapID = 542, -- Spires of Arak
-			raceID = RaceID.ArchRaceArakkoa,
-		},
-		[0] = {
 			-- Sethekk Hollow North Digsite
 			id = 307944,
-			mapID = 542, -- Spires of Arak
-			raceID = RaceID.ArchRaceArakkoa,
-		},
-		[0] = {
-			-- Pinchwhistle Point Digsite
-			id = 307952,
-			mapID = 542, -- Spires of Arak
-			raceID = RaceID.ArchRaceArakkoa,
-		},
-		[0] = {
-			-- Veil Akraz Digsite
-			id = 307946,
 			mapID = 542, -- Spires of Arak
 			raceID = RaceID.ArchRaceArakkoa,
 		},
@@ -1758,12 +1746,6 @@ function private.InitializeDigsiteTemplates()
 			id = 307956,
 			mapID = 542, -- Spires of Arak
 			raceID = RaceID.ArchRaceArakkoa,
-		},
-		[0] = {
-			-- Ango'rosh Digsite
-			id = 307971,
-			mapID = 535, -- Talador
-			raceID = RaceID.ArchRaceOgre,
 		},
 		[0] = {
 			-- Forgotten Ogre Ruin Digsite
@@ -1835,12 +1817,6 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Ruins of the First Bastion Digsite
 			id = 308015,
-			mapID = 543, -- Gorgrond
-			raceID = RaceID.ArchRaceOgre,
-		},
-		[0] = {
-			-- Wildwood Wash Dam Digsite
-			id = 308013,
 			mapID = 543, -- Gorgrond
 			raceID = RaceID.ArchRaceOgre,
 		},
@@ -1943,6 +1919,31 @@ function private.InitializeDigsiteTemplates()
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[2041] = {
+			id = 2041, -- Digsite: Felsoul Hold
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceDemons,
+		},
+		[2043] = {
+			id = 2043, -- Digsite: Southern Suramar
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceDemons,
+		},
+		[2047] = {
+			id = 2047, -- Digsite: Sundered Shoals
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceDemons,
+		},
+		[2049] = {
+			id = 2049, -- Digsite: Anora Hollow
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceDemons,
+		},
+		[2073] = {
+			id = 2073, -- Digsite: Upper Felsoul Hold
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceDemons,
+		},
 		[2079] = {
 			id = 2079, -- Digsite: Path of Huln
 			mapID = 650, -- Highmountain
@@ -1960,12 +1961,7 @@ function private.InitializeDigsiteTemplates()
 			mapID = 1017,
 			raceID = RaceID.ArchRaceDemons
 		},
-		[0] = {
-			-- Digsite: Anora Hollow
-			id = 363064,
-			mapID = 680, -- Suramar
-			raceID = RaceID.ArchRaceDemons,
-		},
+
 		[0] = {
 			-- Digsite: Bloodhunt Highland
 			id = 353983,
@@ -2017,12 +2013,6 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Feathermane Hunting Grounds
 			id = 346527,
-			mapID = 680, -- Suramar
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Felsoul Hold
-			id = 363056,
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
@@ -2153,12 +2143,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
-			-- Digsite: Southern Suramar
-			id = 363058,
-			mapID = 680, -- Suramar
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
 			-- Digsite: Southern Wash
 			id = 354093,
 			mapID = 1018,
@@ -2181,12 +2165,6 @@ function private.InitializeDigsiteTemplates()
 			id = 346445,
 			mapID = 1017,
 			raceID = RaceID.ArchRaceDemons
-		},
-		[0] = {
-			-- Digsite: Sundered Shoals
-			id = 363062,
-			mapID = 680, -- Suramar
-			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
 			-- Digsite: Temple of a Thousand Lights
@@ -2458,6 +2436,16 @@ function private.InitializeDigsiteTemplates()
 			mapID = 864, -- Vol'dun
 			raceID = RaceID.ArchRaceZandalari,
 		},
+		[2485] = {
+			id = 2485, -- Digsite: Port of Zem'lan
+			mapID = 864, -- Vol'dun
+			raceID = RaceID.ArchRaceZandalari,
+		},
+		[2487] = {
+			id = 2487, -- Digsite: The Cracked Coast
+			mapID = 864, -- Vol'dun
+			raceID = RaceID.ArchRaceZandalari,
+		},
 		[2489] = {
 			id = 2489, -- Digsite: Court of Zak'rajan
 			mapID = 864, -- Vol'dun
@@ -2466,11 +2454,6 @@ function private.InitializeDigsiteTemplates()
 		[2491] = -- Digsite: Terrace of the Fang
 		{ 
 			id = 2491, 
-			mapID = 864, -- Vol'dun
-			raceID = RaceID.ArchRaceZandalari,
-		},
-		[0] = {
-			id = 0, -- Digsite: The Cracked Coast
 			mapID = 864, -- Vol'dun
 			raceID = RaceID.ArchRaceZandalari,
 		},
