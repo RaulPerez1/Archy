@@ -1884,6 +1884,31 @@ function private.InitializeDigsiteTemplates()
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
 		},
+		[1984] = {
+			id = 1984, -- Digsite: Garden of Elune
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[1986] = {
+			id = 1986, -- Digsite: The Ruined Sanctum
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[1990] = {
+			id = 1990, -- Digsite: Temple of a Thousand Lights
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[1992] = {
+			id = 1992, -- Digsite: Ruins of Zarkhenar
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[1996] = {
+			id = 1996, -- Digsite: Nor'Danil Wellspring
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[1998] = {
 			id = 1998, -- Digsite: Black Rook Hold
 			mapID = 641, -- Val'sharah
@@ -2022,12 +2047,7 @@ function private.InitializeDigsiteTemplates()
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
-		[0] = {
-			-- Digsite: Garden of Elune
-			id = 354033,
-			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
+
 		[0] = {
 			-- Digsite: Gates of Valor
 			id = 350063,
@@ -2063,12 +2083,6 @@ function private.InitializeDigsiteTemplates()
 			id = 363036,
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Nor'Danil Wellspring
-			id = 354049,
-			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
 			-- Digsite: Northern Helmouth Shallows
@@ -2111,12 +2125,6 @@ function private.InitializeDigsiteTemplates()
 			id = 354022,
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Ruins of Zarkhenar
-			id = 354045,
-			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
 			-- Digsite: Screeching Bend
@@ -2167,12 +2175,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
-			-- Digsite: Temple of a Thousand Lights
-			id = 354043,
-			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
 			-- Digsite: Thas'talah
 			id = 354245,
 			mapID = 1018,
@@ -2189,12 +2191,6 @@ function private.InitializeDigsiteTemplates()
 			id = 353985,
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
-		[0] = {
-			-- Digsite: The Ruined Sancum
-			id = 354037,
-			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
 			-- Digsite: The Tidal Marsh
@@ -2356,6 +2352,11 @@ function private.InitializeDigsiteTemplates()
 		-- Zandalar
 		-- ----------------------------------------------------------------------------
 
+		[2447] = {
+			id = 2447, -- Digsite: Xibala
+			mapID = 862, -- Zuldazar
+			raceID = RaceID.ArchRaceZandalari,
+		},
 		[2451] = {
 			id = 2451, -- Digsite: Dreadpearl Shallows
 			mapID = 862, -- Zuldazar
@@ -2451,9 +2452,8 @@ function private.InitializeDigsiteTemplates()
 			mapID = 864, -- Vol'dun
 			raceID = RaceID.ArchRaceZandalari,
 		},
-		[2491] = -- Digsite: Terrace of the Fang
-		{ 
-			id = 2491, 
+		[2491] = { 
+			id = 2491, -- Digsite: Terrace of the Fang
 			mapID = 864, -- Vol'dun
 			raceID = RaceID.ArchRaceZandalari,
 		},
