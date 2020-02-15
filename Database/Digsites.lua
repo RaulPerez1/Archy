@@ -1159,6 +1159,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[1005] = {
+			id = 1005, -- Gate to Golden Valley Digsite
+			mapID = 379, -- Kun-Lai Summit
+			raceID = RaceID.ArchRaceMogu,
+		},
 		[1007] = {
 			id = 1007, -- Snow Covered Hills Digsite
 			mapID = 379, -- Kun-Lai Summit
@@ -1199,39 +1204,44 @@ function private.InitializeDigsiteTemplates()
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
-		[0] = {
-			id = 1294, -- South Ruins of Guo-Lai Digsite
-			mapID = 390, --Vale of Eternal Blossoms
-			raceID = RaceID.ArchRaceMogu,
-		},
 		[1286] = {
 			id = 1286, -- Mistfall Village Digsite
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRacePandaren,
+		},
+		[1292] = {
+			id = 1292, -- North Ruins of Guo-Lai Digsite
+			mapID = 1530, -- Vale of Eternal Blossoms
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1294] = {
+			id = 1294, -- South Ruins of Guo-Lai Digsite
+			mapID = 1530, -- Vale of Eternal Blossoms
+			raceID = RaceID.ArchRaceMogu,
 		},
 		[1300] = {
 			id = 1300, -- Tu Shen Digsite
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[1308] = {
 			id = 1308, -- West Ruins of Guo-Lai Digsite
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[1318] = {
 			id = 1318, -- Emperor's Approach Digsite
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[1322] = {
 			id = 1322, -- North Summer Fields Digsite
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[1326] = {
 			id = 1326, -- East Summer Fields Digsite
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[1332] = {
@@ -1241,6 +1251,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1338] = {
 			id = 1338, -- Fire Camp Osul Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[1342] = {
+			id = 1342, -- Shanze'Dao Digsite
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRaceMogu,
 		},
@@ -1387,27 +1402,21 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- North Ruins of Guo-Lai Digsite
-			id = 92030,
-			mapID = 390, -- Vale of Eternal Blossoms
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
 			-- NEEDS UPDATE
 			id = 92020,
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
 			-- Five Sisters Digsite
 			id = 92026,
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
 			-- Winterbough Digsite
 			id = 92150,
-			mapID = 390, -- Vale of Eternal Blossoms
+			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
@@ -1421,12 +1430,6 @@ function private.InitializeDigsiteTemplates()
 			id = 92174,
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Shanze'Dao Digsite
-			id = 92196,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
 			-- The Underbough Digsite
@@ -1457,12 +1460,6 @@ function private.InitializeDigsiteTemplates()
 			id = 66979,
 			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Gate to Golden Valley Digsite
-			id = 66967,
-			mapID = 379, -- Kun-Lai Summit
-			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
 			-- Kypari Vor Digsite
@@ -1824,6 +1821,11 @@ function private.InitializeDigsiteTemplates()
 		-- ----------------------------------------------------------------------------
 		-- Broken Isles
 		-- ----------------------------------------------------------------------------
+		[1890] = {
+			id = 1890, -- Digsite: Screeching Bend
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren
+		},
 		[1892] = {
 			id = 1892, -- Digsite: Southern Snowblind Mesa
 			mapID = 650, -- Highmountain
@@ -1839,6 +1841,16 @@ function private.InitializeDigsiteTemplates()
 			mapID = 641, --Val'sharah
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[1902] = {
+			id = 1902, -- Digsite: Shala'nir
+			mapID = 641, -- Val'sharah
+			raceID = RaceID.ArchRaceDemons,
+		},
+		[1904] = {
+			id = 1904, -- Digsite: The Crescent Vale
+			mapID = 641, -- Val'sharah,
+			raceID = RaceID.ArchRaceDemons,
+		},
 		[1906] = {
 			id = 1906, -- Digsite: Legion Camp: Chaos
 			mapID = 630, -- Azsuna
@@ -1851,6 +1863,16 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1955] = {
 			id = 1955, -- Digsite: The Witchwood
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
+		[1957] = {
+			id = 1957, -- Digsite: Bloodhunt Highland
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
+		[1961] = {
+			id = 1961, -- Digsite: Darkfeather Valley
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
@@ -1924,6 +1946,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 641, --Val'sharah
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[2011] = {
+			id = 2011, -- Digsite: Thas'talah
+			mapID = 641, -- Val'sharah,
+			raceID = RaceID.ArchRaceDemons,
+		},
 		[2027] = {
 			id = 2027, -- Digsite: Eastern Ambervale
 			mapID = 680, -- Suramar
@@ -1974,6 +2001,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
+		[2279] = {
+			id = 2279, -- Digsite: The Wildwood
+			mapID = 641, -- Val'sharah
+			raceID = RaceID.ArchRaceDemons,
+		},		
 		[0] = {
 			-- Digsite: Aggramar's Vault
 			id = 346440,
@@ -1986,17 +2018,10 @@ function private.InitializeDigsiteTemplates()
 			mapID = 1017,
 			raceID = RaceID.ArchRaceDemons
 		},
-
-		[0] = {
-			-- Digsite: Bloodhunt Highland
-			id = 353983,
-			mapID = 650, -- Highmountain
-			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
 		[0] = {
 			-- Digsite: Bradensbrook
 			id = 346502,
-			mapID = 1018,
+			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
@@ -2018,15 +2043,9 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
-			-- Digsite: Darkfeather Valley
-			id = 353987,
-			mapID = 650, -- Highmountain
-			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
-		[0] = {
 			-- Digsite: Dreadroot
 			id = 354251,
-			mapID = 1018,
+			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
@@ -2063,7 +2082,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Lightsong
 			id = 346506,
-			mapID = 1018,
+			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
@@ -2127,18 +2146,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
-			-- Digsite: Screeching Bend
-			id = 346478,
-			mapID = 650, -- Highmountain
-			raceID = RaceID.ArchRaceHighmountainTauren
-		},
-		[0] = {
-			-- Digsite: Shala'nir
-			id = 346512,
-			mapID = 1018,
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
 			-- Digsite: Skold-Ashil
 			id = 353972,
 			mapID = 1017,
@@ -2153,7 +2160,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Southern Wash
 			id = 354093,
-			mapID = 1018,
+			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
@@ -2175,18 +2182,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
-			-- Digsite: Thas'talah
-			id = 354245,
-			mapID = 1018,
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: The Crescent Vale
-			id = 346514,
-			mapID = 1018,
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
 			-- Digsite: The Haglands
 			id = 353985,
 			mapID = 650, -- Highmountain
@@ -2197,12 +2192,6 @@ function private.InitializeDigsiteTemplates()
 			id = 354047,
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
-			-- Digsite: The Wildwood
-			id = 354249,
-			mapID = 1018,
-			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
 			-- Digsite: Timeworn Strand
@@ -2225,7 +2214,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Wretched Hollow
 			id = 354247,
-			mapID = 1018,
+			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceDemons,
 		},
 
@@ -2357,6 +2346,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 862, -- Zuldazar
 			raceID = RaceID.ArchRaceZandalari,
 		},
+		[2449] = {
+			id = 2449, -- Digsite: Tusk Isle
+			mapID = 862, -- Zuldazar
+			raceID = RaceID.ArchRaceZandalari,
+		},
 		[2451] = {
 			id = 2451, -- Digsite: Dreadpearl Shallows
 			mapID = 862, -- Zuldazar
@@ -2432,6 +2426,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 864, --Vol'dun
 			raceID = RaceID.ArchRaceZandalari,
 		},
+		[2481] = {
+			id = 2481, -- Digsite: The Eternal Spring
+			mapID = 864, -- Vol'dun
+			raceID = RaceID.ArchRaceZandalari,
+		},
 		[2483] = {
 			id = 2483, -- Digsite: Whistlebloom Oasis
 			mapID = 864, -- Vol'dun
@@ -2454,11 +2453,6 @@ function private.InitializeDigsiteTemplates()
 		},
 		[2491] = { 
 			id = 2491, -- Digsite: Terrace of the Fang
-			mapID = 864, -- Vol'dun
-			raceID = RaceID.ArchRaceZandalari,
-		},
-		[0] = {
-			id = 0, -- Digsite: The Eternal Spring
 			mapID = 864, -- Vol'dun
 			raceID = RaceID.ArchRaceZandalari,
 		},
