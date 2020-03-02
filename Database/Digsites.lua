@@ -1169,6 +1169,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[1009] = {
+			id = 1009, -- East Snow Covered Hills Digsite
+			mapID = 379, -- Kun-Lai Summit
+			raceID = RaceID.ArchRaceMogu,
+		},
 		[1017] = {
 			id = 1017, -- Old Village Digsite
 			mapID = 379, -- Kun-Lai Summit
@@ -1196,6 +1201,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1039] = {
 			id = 1039, -- Orchard Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[1045] = {
+			id = 1045, -- South Orchard Digsite
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
@@ -1390,12 +1400,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
-			-- South Orchard Digsite
-			id = 67033,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
 			-- Thunderwood Digsite
 			id = 66890,
 			mapID = 371, -- The Jade Forest
@@ -1496,12 +1500,6 @@ function private.InitializeDigsiteTemplates()
 			id = 66991,
 			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Snow Covered Hills Digsite
-			id = 66969,
-			mapID = 379, -- Kun-Lai Summit
-			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
 			-- South Fruited Fields Digsite
@@ -1821,6 +1819,16 @@ function private.InitializeDigsiteTemplates()
 		-- ----------------------------------------------------------------------------
 		-- Broken Isles
 		-- ----------------------------------------------------------------------------
+		[1882] = {
+			id = 1882, -- Digsite: Stormdrake Peak
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
+		[1884] = {
+			id = 1884, -- Digsite: Southern Helmouth Shallows
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
 		[1890] = {
 			id = 1890, -- Digsite: Screeching Bend
 			mapID = 650, -- Highmountain
@@ -1860,6 +1868,21 @@ function private.InitializeDigsiteTemplates()
 			id = 1912, -- Digsite: Moonwhisper Gulch
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[1937] = {
+			id = 1937, -- Digsite: Warden's Bluff
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons,
+		},
+		[1939] = {
+			id = 1939, -- Digsite: Amberfall Mesa
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
+		[1943] = {
+			id = 1943, -- Digsite: Fallen Kings
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
 		},
 		[1955] = {
 			id = 1955, -- Digsite: The Witchwood
@@ -2009,13 +2032,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Aggramar's Vault
 			id = 346440,
-			mapID = 1017,
-			raceID = RaceID.ArchRaceDemons
-		},
-		[0] = {
-			-- Digsite: Amberfall Mesa
-			id = 353961,
-			mapID = 1017,
+			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
@@ -2027,13 +2044,13 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Citrine Bay
 			id = 353967,
-			mapID = 1017,
+			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
 			-- Digsite: Cliffpaw Ridge
 			id = 353970,
-			mapID = 1017,
+			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
@@ -2047,12 +2064,6 @@ function private.InitializeDigsiteTemplates()
 			id = 354251,
 			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Fallen Kings
-			id = 353965,
-			mapID = 1017,
-			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
 			-- Digsite: Feathermane Hunting Grounds
@@ -2070,7 +2081,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Gates of Valor
 			id = 350063,
-			mapID = 1017,
+			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
@@ -2106,7 +2117,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Northern Helmouth Shallows
 			id = 346449,
-			mapID = 1017,
+			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
@@ -2148,13 +2159,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Skold-Ashil
 			id = 353972,
-			mapID = 1017,
-			raceID = RaceID.ArchRaceDemons
-		},
-		[0] = {
-			-- Digsite: Southern Helmouth Shallows
-			id = 346447,
-			mapID = 1017,
+			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
@@ -2172,13 +2177,7 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Digsite: Storm's Reach
 			id = 353963,
-			mapID = 1017,
-			raceID = RaceID.ArchRaceDemons
-		},
-		[0] = {
-			-- Digsite: Stormdrake Peak
-			id = 346445,
-			mapID = 1017,
+			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
@@ -2197,12 +2196,6 @@ function private.InitializeDigsiteTemplates()
 			-- Digsite: Timeworn Strand
 			id = 354025,
 			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Warden's Bluff
-			id = 353957,
-			mapID = 1017,
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
