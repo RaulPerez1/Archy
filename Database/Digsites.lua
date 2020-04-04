@@ -1819,6 +1819,11 @@ function private.InitializeDigsiteTemplates()
 		-- ----------------------------------------------------------------------------
 		-- Broken Isles
 		-- ----------------------------------------------------------------------------
+		[1877] = {
+			id = 1877, -- Digsite: Whitewater Wash
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
 		[1882] = {
 			id = 1882, -- Digsite: Stormdrake Peak
 			mapID = 634, -- Stormheim
@@ -1884,6 +1889,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
+		[1951] = {
+			id = 1951, -- Digsite: Prowler's Scratch
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
 		[1955] = {
 			id = 1955, -- Digsite: The Witchwood
 			mapID = 650, -- Highmountain
@@ -1901,6 +1911,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1963] = {
 			id = 1963, -- Digsite: Sky Sepulcher
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
+		[1965] = {
+			id = 1965, -- Digsite: Northern Snowblind Mesa
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
@@ -1939,6 +1954,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[1988] = {
+			id = 1988, -- Digsite: Old Coast Path
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[1990] = {
 			id = 1990, -- Digsite: Temple of a Thousand Lights
 			mapID = 630, -- Azsuna
@@ -1946,6 +1966,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1992] = {
 			id = 1992, -- Digsite: Ruins of Zarkhenar
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
+		[1994] = {
+			id = 1994, -- Digsite: The Tidal Marsh
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
@@ -2127,26 +2152,8 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
-			-- Digsite: Northern Snowblind Mesa
-			id = 353991,
-			mapID = 650, -- Highmountain
-			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
-		[0] = {
-			-- Digsite: Old Coast Path
-			id = 354041,
-			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
 			-- Digsite: Pinerock Basin
 			id = 353979,
-			mapID = 650, -- Highmountain
-			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
-		[0] = {
-			-- Digsite: Prowler's Scratch
-			id = 353977,
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
@@ -2187,22 +2194,10 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
-			-- Digsite: The Tidal Marsh
-			id = 354047,
-			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
 			-- Digsite: Timeworn Strand
 			id = 354025,
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Whitewater Wash
-			id = 344517,
-			mapID = 650, -- Highmountain
-			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
 			-- Digsite: Wretched Hollow
