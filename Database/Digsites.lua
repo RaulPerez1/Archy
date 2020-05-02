@@ -1129,6 +1129,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 433, -- The Veiled Stair
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[973] = {
+			id = 973, -- North Fruited Fields Digsite
+			mapID = 376, -- Valley of the Four Winds
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[983] = {
 			id = 983, -- Ruins of Korja Digsite
 			mapID = 418, -- Krasarang Wilds
@@ -1216,6 +1221,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1286] = {
 			id = 1286, -- Mistfall Village Digsite
+			mapID = 1530, -- Vale of Eternal Blossoms
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[1288] = {
+			id = 1288, -- Five Sisters Digsite
 			mapID = 1530, -- Vale of Eternal Blossoms
 			raceID = RaceID.ArchRacePandaren,
 		},
@@ -1324,6 +1334,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRaceMantid,
 		},
+		[1475] = {
+			id = 1475, -- The Underbough Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMantid,
+		},
 		[1479] = {
 			id = 1479, -- Ikz'ka Ridge Digsite
 			mapID = 388, -- Townlong Steppes
@@ -1331,6 +1346,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1481] = {
 			id = 1481, -- Sik'vess Digsite
+			mapID = 388, -- Townlong Steppes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1483] = {
+			id = 1483, -- West Sik'vess Digsite
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRaceMantid,
 		},
@@ -1366,6 +1386,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1503] = {
 			id = 1503, -- Lake of Stars Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMantid,
+		},
+		[1507] = {
+			id = 1507, -- Kypari Vor Digsite
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
@@ -1412,12 +1437,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
-			-- Five Sisters Digsite
-			id = 92026,
-			mapID = 1530, -- Vale of Eternal Blossoms
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
 			-- Winterbough Digsite
 			id = 92150,
 			mapID = 1530, -- Vale of Eternal Blossoms
@@ -1436,18 +1455,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
-			-- The Underbough Digsite
-			id = 177497,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
-			-- West Sik'vess Digsite
-			id = 177505,
-			mapID = 388, -- Townlong Steppes
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
 			-- Amber Quarry Digsite
 			id = 177517,
 			mapID = 422, -- Dread Wastes
@@ -1463,18 +1470,6 @@ function private.InitializeDigsiteTemplates()
 			-- Destroyed Village Digsite
 			id = 66979,
 			mapID = 379, -- Kun-Lai Summit
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Kypari Vor Digsite
-			id = 177529,
-			mapID = 422, -- Dread Wastes
-			raceID = RaceID.ArchRaceMantid,
-		},
-		[0] = {
-			-- North Fruited Fields Digsite
-			id = 66935,
-			mapID = 376, -- Valley of the Four Winds
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
@@ -1593,6 +1588,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 542, -- Spires of Arak
 			raceID = RaceID.ArchRaceArakkoa,
 		},
+		[1760] = {
+			id = 1760, -- Sethekk Hollow North Digsite
+			mapID = 542, -- Spires of Arak
+			raceID = RaceID.ArchRaceArakkoa,
+		},
 		[1762] = {
 			id = 1762, -- Veil Akraz Digsite
 			mapID = 542, -- Spires of Arak
@@ -1623,8 +1623,18 @@ function private.InitializeDigsiteTemplates()
 			mapID = 535, -- Talador
 			raceID = RaceID.ArchRaceOgre,
 		},
+		[1778] = {
+			id = 1778, -- Veil Shadar Digsite
+			mapID = 535, -- Talador
+			raceID = RaceID.ArchRaceArakkoa,
+		},
 		[1780] = {
 			id = 1780, -- Duskfall Island Digsite
+			mapID = 535, -- Talador
+			raceID = RaceID.ArchRaceOgre,
+		},
+		[1782] = {
+			id = 1782, -- Zangarra Digsite
 			mapID = 535, -- Talador
 			raceID = RaceID.ArchRaceOgre,
 		},
@@ -1731,12 +1741,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceArakkoa,
 		},
 		[0] = {
-			-- Sethekk Hollow North Digsite
-			id = 307944,
-			mapID = 542, -- Spires of Arak
-			raceID = RaceID.ArchRaceArakkoa,
-		},
-		[0] = {
 			-- Veil Zekk Digsite
 			id = 307956,
 			mapID = 542, -- Spires of Arak
@@ -1745,18 +1749,6 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- Forgotten Ogre Ruin Digsite
 			id = 307973,
-			mapID = 535, -- Talador
-			raceID = RaceID.ArchRaceOgre,
-		},
-		[0] = {
-			-- Veil Shadar Digsite
-			id = 307962,
-			mapID = 535, -- Talador
-			raceID = RaceID.ArchRaceArakkoa,
-		},
-		[0] = {
-			-- Zangarra Digsite
-			id = 307966,
 			mapID = 535, -- Talador
 			raceID = RaceID.ArchRaceOgre,
 		},
@@ -1884,8 +1876,18 @@ function private.InitializeDigsiteTemplates()
 			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
+		[1941] = {
+			id = 1941, -- Digsite: Storm's Reach
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
 		[1943] = {
 			id = 1943, -- Digsite: Fallen Kings
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
+		[1945] = {
+			id = 1945, -- Digsite: Citrine Bay
 			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
@@ -1938,6 +1940,11 @@ function private.InitializeDigsiteTemplates()
 			id = 1978, -- Digsite: Northern Watcher Isle
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
+		},
+		[1880] = {
+			id = 1880, -- Digsite: Aggramar's Vault
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
 		},
 		[1982] = {
 			id = 1982, -- Digsite: Makrana
@@ -2004,6 +2011,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[2029] = {
+			id = 2029, -- Digsite: Northern Moonfall Retreat
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[2031] = {
 			id = 2031, -- Digsite: Gates of the City
 			mapID = 680, -- Suramar
@@ -2055,22 +2067,10 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons,
 		},		
 		[0] = {
-			-- Digsite: Aggramar's Vault
-			id = 346440,
-			mapID = 634, -- Stormheim
-			raceID = RaceID.ArchRaceDemons
-		},
-		[0] = {
 			-- Digsite: Bradensbrook
 			id = 346502,
 			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
-			-- Digsite: Citrine Bay
-			id = 353967,
-			mapID = 634, -- Stormheim
-			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
 			-- Digsite: Cliffpaw Ridge
@@ -2146,12 +2146,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
-			-- Digsite: Northern Moonfall Retreat
-			id = 363019,
-			mapID = 680, -- Suramar
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
 			-- Digsite: Pinerock Basin
 			id = 353979,
 			mapID = 650, -- Highmountain
@@ -2180,12 +2174,6 @@ function private.InitializeDigsiteTemplates()
 			id = 354029,
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Storm's Reach
-			id = 353963,
-			mapID = 634, -- Stormheim
-			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
 			-- Digsite: The Haglands
@@ -2389,7 +2377,7 @@ function private.InitializeDigsiteTemplates()
 			mapID = 863, -- Nazmir
 			raceID = RaceID.ArchRaceZandalari,
 		},
-		[0] = {
+		[2471] = {
 			id = 2471, -- Digsite: Razorjaw River
 			mapID = 863, -- Nazmir
 			raceID = RaceID.ArchRaceZandalari,
