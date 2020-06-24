@@ -1094,6 +1094,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
+		[928] = {
+			id = 928, -- Shrine of the Dawn Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[934] = {
 			id = 934, -- Ruins of Gan Shi Digsite
 			mapID = 371, -- The Jade Forest
@@ -1133,6 +1138,11 @@ function private.InitializeDigsiteTemplates()
 			id = 973, -- North Fruited Fields Digsite
 			mapID = 376, -- Valley of the Four Winds
 			raceID = RaceID.ArchRacePandaren,
+		},
+		[981] = {
+			id = 981, -- Fallsong Village Digsite
+			mapID = 418, -- Krasarang Wilds
+			raceID = RaceID.ArchRaceMogu,
 		},
 		[983] = {
 			id = 983, -- Ruins of Korja Digsite
@@ -1374,6 +1384,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 422, -- Dread Wastes
 			raceID = RaceID.ArchRaceMantid,
 		},
+		[1495] = {
+			id = 1495, -- Amber Quarry Digsite
+			mapID = 422, -- Dread Wastes
+			raceID = RaceID.ArchRaceMantid,
+		},
 		[1497] = {
 			id = 1497, -- The Briny Muck Digsite
 			mapID = 422, -- Dread Wastes
@@ -1395,12 +1410,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
-			-- Fallsong Village Digsite
-			id = 66943,
-			mapID = 418, -- Krasarang Wilds
-			raceID = RaceID.ArchRaceMogu,
-		},
-		[0] = {
 			-- Gong of Hope Digsite
 			id = 67023,
 			mapID = 371, -- The Jade Forest
@@ -1415,12 +1424,6 @@ function private.InitializeDigsiteTemplates()
 		[0] = {
 			-- NEEDS UPDATE
 			id = 67037,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Shrine of the Dawn Digsite
-			id = 66789,
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
@@ -1453,12 +1456,6 @@ function private.InitializeDigsiteTemplates()
 			id = 92174,
 			mapID = 388, -- Townlong Steppes
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Amber Quarry Digsite
-			id = 177517,
-			mapID = 422, -- Dread Wastes
-			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
 			-- Chow Farmstead Digsite
@@ -1816,6 +1813,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
+		[1880] = {
+			id = 1880, -- Digsite: Aggramar's Vault
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
 		[1882] = {
 			id = 1882, -- Digsite: Stormdrake Peak
 			mapID = 634, -- Stormheim
@@ -1825,6 +1827,11 @@ function private.InitializeDigsiteTemplates()
 			id = 1884, -- Digsite: Southern Helmouth Shallows
 			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
+		},
+		[1888] = {
+			id = 1888, -- Digsite: Fields of An'she
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[1890] = {
 			id = 1890, -- Digsite: Screeching Bend
@@ -1941,10 +1948,10 @@ function private.InitializeDigsiteTemplates()
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
 		},
-		[1880] = {
-			id = 1880, -- Digsite: Aggramar's Vault
-			mapID = 634, -- Stormheim
-			raceID = RaceID.ArchRaceDemons
+		[1980] = {
+			id = 1980, -- Digsite: Southern Watcher Isle
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceDemons,
 		},
 		[1982] = {
 			id = 1982, -- Digsite: Makrana
@@ -2031,6 +2038,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[2037] = {
+			id = 2037, -- Digsite: Koralune Fields
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[2041] = {
 			id = 2041, -- Digsite: Felsoul Hold
 			mapID = 680, -- Suramar
@@ -2055,6 +2067,11 @@ function private.InitializeDigsiteTemplates()
 			id = 2073, -- Digsite: Upper Felsoul Hold
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
+		},
+		[2077] = {
+			id = 2077, -- Digsite: Highmountain Burial Ground
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[2079] = {
 			id = 2079, -- Digsite: Path of Huln
@@ -2096,13 +2113,6 @@ function private.InitializeDigsiteTemplates()
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
-		[0] = {
-			-- Digsite: Fields of An'she
-			id = 346475,
-			mapID = 650, -- Highmountain
-			raceID = RaceID.ArchRaceHighmountainTauren,
-		},
-
 		[0] = {
 			-- Digsite: Gates of Valor
 			id = 350063,
@@ -2168,12 +2178,6 @@ function private.InitializeDigsiteTemplates()
 			id = 354093,
 			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
-			-- Digsite: Southern Watcher Isle (copy)
-			id = 354029,
-			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
 			-- Digsite: The Haglands
