@@ -1868,6 +1868,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
 		},
+		[1910] = {
+			id = 1910, -- Digsite: Feathermane Hunting Grounds
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceDemons,
+		},
 		[1912] = {
 			id = 1912, -- Digsite: Moonwhisper Gulch
 			mapID = 680, -- Suramar
@@ -2043,6 +2048,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[2039] = {
+			id = 2039, -- Digsite: Meredil
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceDemons,
+		},
 		[2041] = {
 			id = 2041, -- Digsite: Felsoul Hold
 			mapID = 680, -- Suramar
@@ -2050,6 +2060,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[2043] = {
 			id = 2043, -- Digsite: Southern Suramar
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceDemons,
+		},
+		[2045] = {
+			id = 2045, -- Digsite: Crimson Thicket
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
@@ -2096,21 +2111,9 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
-			-- Digsite: Crimson Thicket
-			id = 363060,
-			mapID = 680, -- Suramar
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
 			-- Digsite: Dreadroot
 			id = 354251,
 			mapID = 641, -- Val'sharah,
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Feathermane Hunting Grounds
-			id = 346527,
-			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
@@ -2141,12 +2144,6 @@ function private.InitializeDigsiteTemplates()
 			-- Digsite: Llothien Highlands
 			id = 354018,
 			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Meredil
-			id = 363036,
-			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
