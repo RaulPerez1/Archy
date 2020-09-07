@@ -1114,6 +1114,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
+		[941] = {
+			id = 941, -- Thunderwood Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRaceMogu,
+		},
 		[955] = {
 			id = 955, -- Singing Marshes Digsite
 			mapID = 376, -- Valley of the Four Winds
@@ -1121,6 +1126,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[957] = {
 			id = 957, -- North Great Wall Digsite
+			mapID = 376, -- Valley of the Four Winds
+			raceID = RaceID.ArchRaceMogu,
+		},
+		[961] = {
+			id = 961, -- South Great Wall Digsite
 			mapID = 376, -- Valley of the Four Winds
 			raceID = RaceID.ArchRaceMogu,
 		},
@@ -1136,6 +1146,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[973] = {
 			id = 973, -- North Fruited Fields Digsite
+			mapID = 376, -- Valley of the Four Winds
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[979] = {
+			id = 979, -- Pools of Purity Digsite
 			mapID = 376, -- Valley of the Four Winds
 			raceID = RaceID.ArchRacePandaren,
 		},
@@ -1189,6 +1204,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 379, -- Kun-Lai Summit
 			raceID = RaceID.ArchRaceMogu,
 		},
+		[1015] = {
+			id = 1015, -- Destroyed Village Digsite
+			mapID = 379, -- Kun-Lai Summit
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[1017] = {
 			id = 1017, -- Old Village Digsite
 			mapID = 379, -- Kun-Lai Summit
@@ -1209,6 +1229,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
+		[1035] = {
+			id = 1035, -- Gong of Hope Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
 		[1037] = {
 			id = 1037, -- Great Bridge Digsite
 			mapID = 371, -- The Jade Forest
@@ -1216,6 +1241,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1039] = {
 			id = 1039, -- Orchard Digsite
+			mapID = 371, -- The Jade Forest
+			raceID = RaceID.ArchRacePandaren,
+		},
+		[1043] = {
+			id = 1043, -- Jade Temple Grounds Digsite
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
 		},
@@ -1410,28 +1440,10 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceMantid,
 		},
 		[0] = {
-			-- Gong of Hope Digsite
-			id = 67023,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Jade Temple Grounds Digsite
-			id = 67031,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
 			-- NEEDS UPDATE
 			id = 67037,
 			mapID = 371, -- The Jade Forest
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Thunderwood Digsite
-			id = 66890,
-			mapID = 371, -- The Jade Forest
-			raceID = RaceID.ArchRaceMogu,
 		},
 		[0] = {
 			-- NEEDS UPDATE
@@ -1464,20 +1476,8 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRacePandaren,
 		},
 		[0] = {
-			-- Destroyed Village Digsite
-			id = 66979,
-			mapID = 379, -- Kun-Lai Summit
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
 			-- Paoquan Hollow Digsite
 			id = 66933,
-			mapID = 376, -- Valley of the Four Winds
-			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- Pools of Purity Digsite
-			id = 66941,
 			mapID = 376, -- Valley of the Four Winds
 			raceID = RaceID.ArchRacePandaren,
 		},
@@ -1498,12 +1498,6 @@ function private.InitializeDigsiteTemplates()
 			id = 66939,
 			mapID = 376, -- Valley of the Four Winds
 			raceID = RaceID.ArchRacePandaren,
-		},
-		[0] = {
-			-- South Great Wall Digsite
-			id = 66923,
-			mapID = 376, -- Valley of the Four Winds
-			raceID = RaceID.ArchRaceMogu,
 		},	
 		[0] = {
 			-- The Clutches of Shek'zeer Digsite
@@ -1579,6 +1573,11 @@ function private.InitializeDigsiteTemplates()
 			id = 1750, -- Umbrafen Digsite
 			mapID = 539, -- Shadowmoon Valley
 			raceID = RaceID.ArchRaceOgre,
+		},
+		[1752] = {
+			id = 1752, -- Shimmering Moor Digsite
+			mapID = 539, -- Shadowmoon Valley
+			raceID = RaceID.ArchRaceArakkoa,
 		},
 		[1758] = {
 			id = 1758, -- Sethekk Hollow South Digsite
@@ -1670,6 +1669,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 550, -- Nagrand
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
+		[1810] = {
+			id = 1810, -- Drowning Plateau Digsite
+			mapID = 550, -- Nagrand
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
 		[1812] = {
 			id = 1812, -- Burning Plateau Digsite
 			mapID = 550, -- Nagrand
@@ -1712,12 +1716,6 @@ function private.InitializeDigsiteTemplates()
 			id = 264233,
 			mapID = 525, -- Frostfire Ridge
 			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
-			-- Shimmering Moor Digsite
-			id = 307936,
-			mapID = 539, -- Shadowmoon Valley
-			raceID = RaceID.ArchRaceArakkoa,
 		},
 		[0] = {
 			-- Gloomshade Digsite
@@ -1785,12 +1783,6 @@ function private.InitializeDigsiteTemplates()
 			mapID = 550, -- Nagrand
 			maxFindCount = 13,
 			raceID = RaceID.ArchRaceOgre,
-		},
-		[0] = {
-			-- Drowning Plateau Digsite
-			id = 307995,
-			mapID = 550, -- Nagrand
-			raceID = RaceID.ArchRaceDraenorOrc,
 		},
 		[0] = {
 			-- Overlook Ruins Digsite
@@ -1868,6 +1860,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
 		},
+		[1908] = {
+			id = 1908, -- Digsite: Llothien
+			mapID = 630, -- Azsuna
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[1910] = {
 			id = 1910, -- Digsite: Feathermane Hunting Grounds
 			mapID = 680, -- Suramar
@@ -1900,6 +1897,16 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1945] = {
 			id = 1945, -- Digsite: Citrine Bay
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
+		[1947] = {
+			id = 1947, -- Digsite: Cliffpaw Ridge
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
+		[1949] = {
+			id = 1949, -- Digsite: Skold-Ashil
 			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
@@ -2018,6 +2025,16 @@ function private.InitializeDigsiteTemplates()
 			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceDemons,
 		},
+		[2013] = {
+			id = 2013, -- Digsite: Wretched Hollow
+			mapID = 641, -- Val'sharah,
+			raceID = RaceID.ArchRaceDemons,
+		},
+		[2017] = {
+			id = 2017, -- Digsite: Dreadroot
+			mapID = 641, -- Val'sharah,
+			raceID = RaceID.ArchRaceDemons,
+		},
 		[2027] = {
 			id = 2027, -- Digsite: Eastern Ambervale
 			mapID = 680, -- Suramar
@@ -2105,18 +2122,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
-			-- Digsite: Cliffpaw Ridge
-			id = 353970,
-			mapID = 634, -- Stormheim
-			raceID = RaceID.ArchRaceDemons
-		},
-		[0] = {
-			-- Digsite: Dreadroot
-			id = 354251,
-			mapID = 641, -- Val'sharah,
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
 			-- Digsite: Gates of Valor
 			id = 350063,
 			mapID = 634, -- Stormheim
@@ -2132,12 +2137,6 @@ function private.InitializeDigsiteTemplates()
 			-- Digsite: Lightsong
 			id = 346506,
 			mapID = 641, -- Val'sharah,
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
-			-- Digsite: Llothien
-			id = 346522,
-			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
@@ -2165,12 +2164,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDemons,
 		},
 		[0] = {
-			-- Digsite: Skold-Ashil
-			id = 353972,
-			mapID = 634, -- Stormheim
-			raceID = RaceID.ArchRaceDemons
-		},
-		[0] = {
 			-- Digsite: Southern Wash
 			id = 354093,
 			mapID = 641, -- Val'sharah,
@@ -2186,12 +2179,6 @@ function private.InitializeDigsiteTemplates()
 			-- Digsite: Timeworn Strand
 			id = 354025,
 			mapID = 630, -- Azsuna
-			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Wretched Hollow
-			id = 354247,
-			mapID = 641, -- Val'sharah,
 			raceID = RaceID.ArchRaceDemons,
 		},
 
