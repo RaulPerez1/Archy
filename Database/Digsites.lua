@@ -1529,6 +1529,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 525, -- Frostfire Ridge
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
+		[1691] = {
+			id = 1691, -- Grom'gar Digsite
+			mapID = 525, -- Frostfire Ridge
+			raceID = RaceID.ArchRaceDraenorOrc,
+		},
 		[1695] = {
 			id = 1695, -- Stonefang Ridge Digsite
 			mapID = 525, -- Frostfire Ridge
@@ -1599,6 +1604,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 542, -- Spires of Arak
 			raceID = RaceID.ArchRaceOgre,
 		},
+		[1766] = {
+			id = 1766, -- Bloodmane Pridelands Digsite
+			mapID = 542, -- Spires of Arak
+			raceID = RaceID.ArchRaceArakkoa,
+		},
 		[1768] = {
 			id = 1768, -- Pinchwhistle Point Digsite
 			mapID = 542, -- Spires of Arak
@@ -1636,6 +1646,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1786] = {
 			id = 1786, -- Ango'rosh Digsite
+			mapID = 535, -- Talador
+			raceID = RaceID.ArchRaceOgre,
+		},
+		[1788] = {
+			id = 1788, -- Forgotten Ogre Ruin Digsite
 			mapID = 535, -- Talador
 			raceID = RaceID.ArchRaceOgre,
 		},
@@ -1679,6 +1694,16 @@ function private.InitializeDigsiteTemplates()
 			mapID = 550, -- Nagrand
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
+		[1816] = {
+			id = 1816, -- Highmaul Watchtower Digsite
+			mapID = 550, -- Nagrand
+			raceID = RaceID.ArchRaceOgre,
+		},
+		[1818] = {
+			id = 1818, -- Mar'gok's Overwatch Digsite
+			mapID = 550, -- Nagrand
+			raceID = RaceID.ArchRaceOgre,
+		},
 		[1820] = {
 			id = 1820, -- Deadgrin Ruins Digsite
 			mapID = 543, -- Gorgrond
@@ -1712,12 +1737,6 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
 		[0] = {
-			-- Grom'gar Digsite
-			id = 264233,
-			mapID = 525, -- Frostfire Ridge
-			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
 			-- Gloomshade Digsite
 			id = 307940,
 			mapID = 539, -- Shadowmoon Valley
@@ -1730,40 +1749,16 @@ function private.InitializeDigsiteTemplates()
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
 		[0] = {
-			-- Bloodmane Pridelands Digsite
-			id = 307950,
-			mapID = 542, -- Spires of Arak
-			raceID = RaceID.ArchRaceArakkoa,
-		},
-		[0] = {
 			-- Veil Zekk Digsite
 			id = 307956,
 			mapID = 542, -- Spires of Arak
 			raceID = RaceID.ArchRaceArakkoa,
 		},
 		[0] = {
-			-- Forgotten Ogre Ruin Digsite
-			id = 307973,
-			mapID = 535, -- Talador
-			raceID = RaceID.ArchRaceOgre,
-		},
-		[0] = {
 			-- Ancestral Grounds Digsite
 			id = 307987,
 			mapID = 550, -- Nagrand
 			raceID = RaceID.ArchRaceDraenorOrc,
-		},
-		[0] = {
-			-- Highmaul Watchtower Digsite
-			id = 308001,
-			mapID = 550, -- Nagrand
-			raceID = RaceID.ArchRaceOgre,
-		},
-		[0] = {
-			-- Mar'gok's Overwatch Digsite
-			id = 308003,
-			mapID = 550, -- Nagrand
-			raceID = RaceID.ArchRaceOgre,
 		},
 		[0] = {
 			-- Overgrown Highmaul Road Digsite
@@ -1817,6 +1812,11 @@ function private.InitializeDigsiteTemplates()
 		},
 		[1884] = {
 			id = 1884, -- Digsite: Southern Helmouth Shallows
+			mapID = 634, -- Stormheim
+			raceID = RaceID.ArchRaceDemons
+		},
+		[1886] = {
+			id = 1886, -- Digsite: Northern Helmouth Shallows
 			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons
 		},
@@ -2144,12 +2144,6 @@ function private.InitializeDigsiteTemplates()
 			id = 354018,
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Northern Helmouth Shallows
-			id = 346449,
-			mapID = 634, -- Stormheim
-			raceID = RaceID.ArchRaceDemons
 		},
 		[0] = {
 			-- Digsite: Pinerock Basin
