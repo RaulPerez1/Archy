@@ -35,7 +35,13 @@ DatamineTooltip:SetOwner(_G.UIParent, "ANCHOR_NONE")
 -- ----------------------------------------------------------------------------
 -- Constants
 -- ----------------------------------------------------------------------------
-local MAX_PROFESSION_RANK = _G.GetExpansionLevel() + 4 -- Skip the 4 ranks of vanilla
+local MAX_PROFESSION_RANK = _G.GetExpansionLevel()
+if MAX_PROFESSION_RANK == 8 then
+	-- Shadowlands currently has no Archeology so adjust the rank
+	MAX_PROFESSION_RANK = MAX_PROFESSION_RANK - 1 
+end
+MAX_PROFESSION_RANK = MAX_PROFESSION_RANK + 4 -- Skip the 4 ranks of vanilla
+
 local MAX_ARCHAEOLOGY_RANK = _G.PROFESSION_RANKS[MAX_PROFESSION_RANK][1]
 private.MAX_ARCHAEOLOGY_RANK = MAX_ARCHAEOLOGY_RANK
 
