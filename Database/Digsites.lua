@@ -2020,6 +2020,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 641, --Val'sharah
 			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
+		[2004] = {
+			id = 2004, -- Digsite: Southern Wash
+			mapID = 641, -- Val'sharah
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[2011] = {
 			id = 2011, -- Digsite: Thas'talah
 			mapID = 641, -- Val'sharah,
@@ -2156,12 +2161,6 @@ function private.InitializeDigsiteTemplates()
 			id = 354022,
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Southern Wash
-			id = 354093,
-			mapID = 641, -- Val'sharah,
-			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
 			-- Digsite: The Haglands
