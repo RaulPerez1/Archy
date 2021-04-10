@@ -1724,6 +1724,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 525, -- Frostfire Ridge
 			raceID = RaceID.ArchRaceDraenorOrc,
 		},
+		[1959] = {
+			id = 1959, -- Digsite: The Haglands
+			mapID = 650, -- Highmountain
+			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
 		[0] = {
 			-- Frostwind Crag Digsite
 			id = 264237,
@@ -1834,6 +1839,11 @@ function private.InitializeDigsiteTemplates()
 			id = 1892, -- Digsite: Southern Snowblind Mesa
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
+		},
+		[1894] = {
+			id = 1894, -- Digsite: Bradensbrook
+			mapID = 641, -- Val'sharah,
+			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[1896] = {
 			id = 1896, -- Digsite: Kal'delar
@@ -2105,6 +2115,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 680, -- Suramar
 			raceID = RaceID.ArchRaceDemons,
 		},
+		[2075] = {
+			id = 2075, -- Digsite: Koralune Estate
+			mapID = 680, -- Suramar
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[2077] = {
 			id = 2077, -- Digsite: Highmountain Burial Ground
 			mapID = 650, -- Highmountain
@@ -2115,28 +2130,21 @@ function private.InitializeDigsiteTemplates()
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
+		[2085] = {
+			id = 2085, -- Digsite: Gloaming Reef
+			mapID = 641, -- Val'sharah
+			raceID = RaceID.ArchRaceHighborneNightElves,
+		},
 		[2279] = {
 			id = 2279, -- Digsite: The Wildwood
 			mapID = 641, -- Val'sharah
 			raceID = RaceID.ArchRaceDemons,
 		},		
 		[0] = {
-			-- Digsite: Bradensbrook
-			id = 346502,
-			mapID = 641, -- Val'sharah,
-			raceID = RaceID.ArchRaceHighborneNightElves,
-		},
-		[0] = {
 			-- Digsite: Gates of Valor
 			id = 350063,
 			mapID = 634, -- Stormheim
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: Koralune Estate
-			id = 363029,
-			mapID = 680, -- Suramar
-			raceID = RaceID.ArchRaceHighborneNightElves,
 		},
 		[0] = {
 			-- Digsite: Lightsong
@@ -2161,12 +2169,6 @@ function private.InitializeDigsiteTemplates()
 			id = 354022,
 			mapID = 630, -- Azsuna
 			raceID = RaceID.ArchRaceDemons,
-		},
-		[0] = {
-			-- Digsite: The Haglands
-			id = 353985,
-			mapID = 650, -- Highmountain
-			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
 		[0] = {
 			-- Digsite: Timeworn Strand
