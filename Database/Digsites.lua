@@ -2130,6 +2130,11 @@ function private.InitializeDigsiteTemplates()
 			mapID = 650, -- Highmountain
 			raceID = RaceID.ArchRaceHighmountainTauren,
 		},
+		[2081] = {
+			id = 2081, -- Digsite: Black Rook Courtyard
+			mapID = 641, -- Val'sharah
+			raceID = RaceID.Unknown,
+		},
 		[2085] = {
 			id = 2085, -- Digsite: Gloaming Reef
 			mapID = 641, -- Val'sharah
